@@ -6,19 +6,17 @@
 
 #include <iostream>
 #include <vector>
+#include <utility> // for `std::swap` or <algorithm>
 
 void bubble_sort(std::vector<int>& vi) {
   if (vi.empty()) {
     return;
   }
 
-  int tmp = 0;
   for (int i = 0; i < vi.size(); ++i) {
     for (int j = i + 1; j < vi.size(); ++j) {
       if (vi[i] > vi[j]) {
-        tmp = vi[i];
-        vi[i] = vi[j];
-        vi[j] = tmp;
+        std::swap(vi[i], vi[j]);
       }
     }
   }
