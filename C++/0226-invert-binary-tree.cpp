@@ -80,10 +80,9 @@ public:
 		TreeNode* curr = root;
 		TreeNode* lastVisited = nullptr;
 		while (curr != nullptr || !walk_stack.empty()) {
-			if (curr != nullptr) {
+			while (curr != nullptr) {
 				walk_stack.push(curr);
 				curr = curr->left;
-				continue;
 			}
 
 			TreeNode* node = walk_stack.top();
@@ -142,7 +141,7 @@ public:
 			return nullptr;
 		}
 
-		std::stack<TreeNode*> walk_stack;
+		std::stack<TreeNode*> walk_stack{};
 		TreeNode* curr = root;
 		while (curr != nullptr || !walk_stack.empty()) {
 			while (curr != nullptr) {
@@ -150,6 +149,15 @@ public:
 				curr = curr->left;
 			}
 
+			// Note: lines 161~164 are equivalent to lines 154~159.
+			/*
+			TreeNode* node = walk_stack.top();
+			walk_stack.pop();
+			TreeNode* invertNode = node;
+			if (node->right != nullptr) {
+				curr = node->right;
+			}
+			*/
 			curr = walk_stack.top();
 			walk_stack.pop();
 			TreeNode* invertNode = curr;
