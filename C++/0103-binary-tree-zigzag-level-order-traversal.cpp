@@ -24,20 +24,15 @@ public:
     vector<vector<int>> res{};
     queue<TreeNode*> q{};
     q.push(root);
-    bool l2r = true;
     while (!q.empty()) {
       int sz = q.size();
-      res.emplace_back();
-      res.back().reserve(sz);
+      res.emplace_back(sz); // res.back().size() == sz
       for (int i = 0; i < sz; ++i) {
         TreeNode* node = q.front();
         q.pop();
 
-        if (l2r) {
-          res.back().push_back(node->val);
-        } else {
-          res.back().insert(res.back().cbegin(), node->val);
-        }
+        int j =  res.size() & 0x1 ? i : sz - 1 - i;
+        res.back()[j] = node->val;
 
         if (node->left != nullptr) {
           q.push(node->left);
@@ -46,8 +41,6 @@ public:
           q.push(node->right);
         }
       }
-
-      l2r = !l2r;
     }
 
     return res;
