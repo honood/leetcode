@@ -26,13 +26,12 @@ public:
     q.push(root);
     while (!q.empty()) {
       int sz = q.size();
-      res.emplace_back();
-      res.back().reserve(sz);
+      res.emplace_back(sz); // res.back().size() == sz
       for (int i = 0; i < sz; ++i) {
         TreeNode* node = q.front();
         q.pop();
 
-        res.back().push_back(node->val);
+        res.back()[i] = node->val;
 
         if (node->left != nullptr) {
           q.push(node->left);
