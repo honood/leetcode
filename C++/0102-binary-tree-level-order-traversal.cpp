@@ -25,8 +25,9 @@ public:
     queue<TreeNode*> q{};
     q.push(root);
     while (!q.empty()) {
-      res.emplace_back();
       int sz = q.size();
+      res.emplace_back();
+      res.back().reserve(sz);
       for (int i = 0; i < sz; ++i) {
         TreeNode* node = q.front();
         q.pop();
