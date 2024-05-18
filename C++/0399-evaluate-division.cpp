@@ -108,26 +108,25 @@ public:
       visited.emplace(start);
       queue<pair<string, double>> q{};
       q.emplace(start, 1.0);
-      bool found = false;
-      while (!q.empty() && !found) {
+      while (!q.empty()) {
         pair<string, double> curr = q.front();
         q.pop();
 
-        for (auto const& neighbor : graph[curr.first]) {
+        string const& vertex = curr.first;
+        double acc = curr.second;
+        if (vertex == end) {
+          results[i] = acc;
+          break;
+        }
+
+        for (auto const& neighbor : graph[vertex]) {
           string const& vertex = neighbor.first;
           if (visited.find(vertex) != visited.end()) {
             continue;
           }
 
           double weight = neighbor.second;
-          double val = curr.second * weight;
-          if (vertex == end) {
-            results[i] = val;
-            found = true;
-            break;
-          }
-
-          q.emplace(vertex, val);
+          q.emplace(vertex, acc * weight);
           visited.emplace(vertex);
         } // for
       } // while
