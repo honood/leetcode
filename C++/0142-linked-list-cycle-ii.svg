@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="353.7403 484.0757 1226.5407 793.0892" width="1226.5407" height="793.0892">
+  <defs/>
+  <metadata> Produced by OmniGraffle 7.22.6\n2024-05-31 22:59:40 +0000</metadata>
+  <g id="142__Linked_List_Cycle_II" fill="none" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-dasharray="none">
+    <title>142. Linked List Cycle II</title>
+    <rect fill="white" x="353.7403" y="484.0757" width="1226.5407" height="793.0892"/>
+    <g id="142__Linked_List_Cycle_II_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <circle cx="882" cy="655.5" r="75.0001198426422" fill="white"/>
+        <path d="M 935.033 602.46705 C 966.6688 634.7691 962.7625 677.3136 935.033 708.53295 C 906.0904 737.2732 855.592 735.6169 828.96705 708.53295 C 799.7081 680.1436 796.8737 627.7184 828.96705 602.46705 C 861.8403 574.60296 902.1315 576.55014 935.033 602.46705 M 935.033 602.46705 C 967.0438 634.3941 963.1375 676.9386 935.408 708.15795 C 906.4654 736.8982 855.967 735.2419 829.34205 708.15795 C 800.0831 679.7686 797.2487 627.3434 829.34205 602.09205 C 862.2153 574.22796 902.5065 576.17514 935.408 602.09205" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_7">
+        <path d="M 718.15265 581.4955 L 885.6622 582.0523 M 718.5278 581.0721 L 884.1747 581.5595" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_15">
+        <path d="M 817.1542 574.278 L 826.4898 582.70505 M 825.8549 581.0572 L 817.0281 589.16596 M 817.7436 573.6655 L 825.6462 581.21725 M 826.2458 580.69954 L 818.1588 588.42676" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_16">
+        <path d="M 964.601 660.14 L 954.6371 670.149 M 956.7864 671.5839 L 950.87 656.3447 M 965.0608 659.8494 L 956.2217 668.68714 M 956.9223 671.30174 L 951.9693 658.7345" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_18">
+        <circle cx="883.5415" cy="581.54146" r="5.54146923567561" fill="red"/>
+      </g>
+      <g id="Graphic_19">
+        <circle cx="810.0415" cy="678.0415" r="5.5414692356756" fill="blue"/>
+      </g>
+      <g id="Graphic_20">
+        <circle cx="719.6998" cy="581.5" r="5.54146923567563" fill="#008f00"/>
+      </g>
+      <g id="Graphic_29">
+        <text transform="translate(709.39265 533.61714)" fill="black">
+          <tspan font-family="Chalkboard" font-weight="bold" font-size="32" fill="black" x="7442935e-19" y="39" xml:space="preserve">H</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <text transform="translate(873.8 529.0757)" fill="black">
+          <tspan font-family="Chalkboard" font-weight="bold" font-size="32" fill="black" x="0" y="39" xml:space="preserve">C</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <text transform="translate(776.7818 653.54536)" fill="black">
+          <tspan font-family="Chalkboard" font-weight="bold" font-size="32" fill="black" x="1563194e-19" y="39" xml:space="preserve">M</tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <path d="M 402 761.5 L 934.5 761.5 C 938.9183 761.5 942.5 765.0817 942.5 769.5 L 942.5 1228.5 C 942.5 1232.9183 938.9183 1236.5 934.5 1236.5 L 402 1236.5 C 397.5817 1236.5 394 1232.9183 394 1228.5 L 394 769.5 C 394 765.0817 397.5817 761.5 402 761.5 Z" fill="#c0ffff"/>
+        <path d="M 401.76955 761.5 L 934.4924 761.4322 C 938.4786 761.6027 942.1121 765.498 942.5 769.5 M 942.5 769.3749 L 942.5619 1228.686 C 942.6639 1232.976 938.7089 1236.3447 934.5 1236.5 M 934.6634 1236.5 L 401.9033 1236.3867 C 397.8343 1236.9166 394.3125 1232.6354 394 1228.5 M 393.99996 1228.6631 L 394.1223 769.36195 C 394.07155 765.0168 397.1907 761.3595 402 761.5 M 401.8008 761.468 L 934.4393 761.3945 C 938.5411 761.5402 942.1746 765.4355 942.5625 769.4375 M 942.5504 769.34365 L 942.6078 1228.5734 C 942.7264 1232.9136 938.7714 1236.2822 934.5625 1236.4375 M 934.6946 1236.4848 L 402.141 1236.3813 C 397.8968 1236.854 394.375 1232.5729 394.0625 1228.4375 M 394.0118 1228.6318 L 394.13056 769.4314 C 394.13405 764.9543 397.2532 761.297 402.0625 761.4375" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(399 766.5)" fill="black">
+          <tspan font-family="PragmataPro Liga" font-weight="bold" font-size="14" fill="black" x="0" y="13" xml:space="preserve">Distances: </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="28" xml:space="preserve">1. HC = </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" y="28" xml:space="preserve">K</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" y="28" xml:space="preserve"> (Distance from head to cycle start)</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="43" xml:space="preserve">2. CM = </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" y="43" xml:space="preserve">L</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" y="43" xml:space="preserve"> (Distance from cycle start to meeting point)</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="58" xml:space="preserve">3. CC = </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" y="58" xml:space="preserve">N</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" y="58" xml:space="preserve"> (Length of the cycle)</tspan>
+          <tspan font-family="PragmataPro Liga" font-weight="bold" font-size="14" fill="black" x="0" y="88" xml:space="preserve">Steps per Move:</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="103" xml:space="preserve">1. Slow pointer: </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" y="103" xml:space="preserve">1</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" y="103" xml:space="preserve"> step at a time</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="118" xml:space="preserve">2. Fast pointer: </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" y="118" xml:space="preserve">n</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" y="118" xml:space="preserve"> steps at a time</tspan>
+          <tspan font-family="PragmataPro Liga" font-weight="bold" font-size="14" fill="black" x="0" y="148" xml:space="preserve">Number of loops the fast pointer moves around the cycle:</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" y="148" xml:space="preserve"> </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" y="148" xml:space="preserve">m</tspan>
+          <tspan font-family="PragmataPro Liga" font-weight="bold" font-size="14" fill="black" x="0" y="193" xml:space="preserve">Cycle Detection:</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="223" xml:space="preserve">To derive the relationship, consider the following:</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" x="0" y="253" xml:space="preserve">K + L   K + m∙N + L</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" x="0" y="268" xml:space="preserve">───── = ───────────</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" x="0" y="283" xml:space="preserve">  1          n</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="313" xml:space="preserve">Rearranging gives:</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" x="0" y="343" xml:space="preserve">    (n - 1)∙(K + L)</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" x="0" y="358" xml:space="preserve">m = ───────────────</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" x="0" y="373" xml:space="preserve">           N</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="403" xml:space="preserve">To minimize </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" y="403" xml:space="preserve">m</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" y="403" xml:space="preserve">, </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" y="403" xml:space="preserve">n</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" y="403" xml:space="preserve"> should be as small as possible. The smallest value for </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" y="403" xml:space="preserve">n</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" y="403" xml:space="preserve"> </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="418" xml:space="preserve">that still differentiates the speeds of the two pointers is </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" y="418" xml:space="preserve">2</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" y="418" xml:space="preserve">.</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="448" xml:space="preserve">Therefore, the fast pointer should move </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" y="448" xml:space="preserve">2</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" y="448" xml:space="preserve"> steps at a time to ensure the most </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="463" xml:space="preserve">efficient and simplest cycle detection.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_40">
+        <path d="M 999 761.5 L 1531.5 761.5 C 1535.9183 761.5 1539.5 765.0817 1539.5 769.5 L 1539.5 1168.5 C 1539.5 1172.9183 1535.9183 1176.5 1531.5 1176.5 L 999 1176.5 C 994.5817 1176.5 991 1172.9183 991 1168.5 L 991 769.5 C 991 765.0817 994.5817 761.5 999 761.5 Z" fill="#c0ffff"/>
+        <path d="M 998.8186 761.5 L 1531.4579 761.6084 C 1535.9256 761.2596 1539.8867 765.1632 1539.5 769.5 M 1539.5 769.2999 L 1539.5382 1168.5952 C 1539.4365 1172.6548 1535.7893 1176.3955 1531.5 1176.5 M 1531.7499 1176.5 L 998.8141 1176.412 C 994.8428 1176.4054 991.4162 1173.2 991 1168.5 M 991 1168.6955 L 991.065 769.3047 C 991.1496 764.6684 994.999 761.7942 999 761.5 M 998.8498 761.4534 L 1531.407 761.5639 C 1535.988 761.1971 1539.9492 765.1007 1539.5625 769.4375 M 1539.5443 769.2686 L 1539.5959 1168.3783 C 1539.499 1172.5923 1535.8518 1176.333 1531.5625 1176.4375 M 1531.7811 1176.4905 L 998.9325 1176.3872 C 994.9053 1176.3429 991.4787 1173.1375 991.0625 1168.4375 M 991.0154 1168.6643 L 991.075 769.3795 C 991.2121 764.6059 995.0615 761.7317 999.0625 761.4375" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(996 766.5)" fill="black">
+          <tspan font-family="PragmataPro Liga" font-weight="bold" font-size="14" fill="black" x="0" y="13" xml:space="preserve">Distances: </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="28" xml:space="preserve">1. HC = </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" y="28" xml:space="preserve">K</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" y="28" xml:space="preserve"> (Distance from head to cycle start)</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="43" xml:space="preserve">2. CM = </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" y="43" xml:space="preserve">L</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" y="43" xml:space="preserve"> (Distance from cycle start to meeting point)</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="58" xml:space="preserve">3. CC = </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" y="58" xml:space="preserve">N</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" y="58" xml:space="preserve"> (Length of the cycle)</tspan>
+          <tspan font-family="PragmataPro Liga" font-weight="bold" font-size="14" fill="black" x="0" y="88" xml:space="preserve">Steps per Move:</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="103" xml:space="preserve">1. Slow pointer: </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" y="103" xml:space="preserve">1</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" y="103" xml:space="preserve"> step at a time</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="118" xml:space="preserve">2. Fast pointer: </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" y="118" xml:space="preserve">2</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" y="118" xml:space="preserve"> steps at a time</tspan>
+          <tspan font-family="PragmataPro Liga" font-weight="bold" font-size="14" fill="black" x="0" y="148" xml:space="preserve">Number of loops the fast pointer moves around the cycle:</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" y="148" xml:space="preserve"> </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" y="148" xml:space="preserve">m</tspan>
+          <tspan font-family="PragmataPro Liga" font-weight="bold" font-size="14" fill="black" x="0" y="193" xml:space="preserve">Finding the Start of the Cycle:</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="223" xml:space="preserve">To derive the relationship, consider the following:</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" x="0" y="253" xml:space="preserve">K + L   K + m∙N + L</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" x="0" y="268" xml:space="preserve">───── = ───────────       (m &gt;= 1)</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" x="0" y="283" xml:space="preserve">  1          2</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="313" xml:space="preserve">Rearranging gives:</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="#ff375f" x="0" y="343" xml:space="preserve">K = (N - L) + (m - 1)∙N</tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="373" xml:space="preserve">The equation shows that: when two pointers move at the same speed from </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="388" xml:space="preserve">different starting points (one from the head of the list and the other from </tspan>
+          <tspan font-family="PragmataPro Liga" font-size="14" fill="black" x="0" y="403" xml:space="preserve">the meeting point), they will meet at the start of the cycle. </tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
