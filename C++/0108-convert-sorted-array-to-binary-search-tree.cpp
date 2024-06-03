@@ -6,9 +6,8 @@
 
 // https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm
 
-// Note: 
-// A height-balanced binary tree is a binary tree in which the depth of the two 
-// subtrees of every node never differs by more than one.
+// Note: A height-balanced binary tree is a binary tree in which the depth of
+// the two subtrees of every node never differs by more than one.
 
 // Definition for a binary tree node.
 struct TreeNode {
@@ -39,7 +38,8 @@ private:
       return nullptr;
     }
 
-    int mid = (low + high) / 2;
+    // Note: this way of calculating `mid` is safe from integer overflow.
+    int mid = low + (high - low) / 2;
     return new TreeNode{
       nums[mid],
       impl(nums, low, mid - 1),

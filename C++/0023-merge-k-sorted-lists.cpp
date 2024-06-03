@@ -82,15 +82,17 @@ public:
 
 private:
   ListNode* impl(vector<ListNode*> const& lists, int first, int last) {
-    if (first > last) {
-      return nullptr;
-    }
-
     if (first == last) {
       return lists[first];
     }
 
-    int mid = (first + last) / 2;
+    // Note: The `first > last` scenario does not occur due to the nature of the
+    // recursive division and the termination condition of the function. The
+    // function structure ensures that only valid indices are used, making an
+    // explicit check for `first > last` unnecessary.
+
+    // Note: this way of calculating `mid` is safe from integer overflow.
+    int mid = first + (last - first) / 2;
     return mergeTwoLists(
       impl(lists, first, mid),
       impl(lists, mid + 1, last)

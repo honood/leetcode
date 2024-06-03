@@ -4,7 +4,7 @@
 // 287. Find the Duplicate Number
 // https://leetcode.com/problems/find-the-duplicate-number/description/
 //
-// Note: You must solve the problem without modifying the array `nums` and uses 
+// Note: You must solve the problem without modifying the array `nums` and uses
 // only constant extra space.
 
 auto __unsync_ios_stdio = ios::sync_with_stdio(false);
@@ -22,13 +22,13 @@ public:
     } while (slow != fast);
 
     // Find the entrance to the cycle (duplicate number)
-    slow = nums[0];
-    while (slow != fast) {
+    int start = nums[0];
+    while (start != slow) {
+      start = nums[start];
       slow = nums[slow];
-      fast = nums[fast];
     }
 
-    return slow;
+    return start;
   }
 };
 
@@ -39,7 +39,8 @@ public:
     int high = nums.size() - 1; // n
 
     while (low < high) {
-      int mid = (low + high) / 2;
+      // Note: this way of calculating `mid` is safe from integer overflow.
+      int mid = low + (high - low) / 2;
       int count = 0;
 
       // Count how many numbers are less than or equal to mid
