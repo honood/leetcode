@@ -13,6 +13,8 @@ public:
     uint32_t res = 0;
     for (int i = 0; i < std::numeric_limits<uint32_t>::digits; ++i) {
       res = (res << 1) | ((n >> i) & 1);
+      //                  ^      ^
+      // Note: Parentheses are not needed as `>>` has higher precedence than `&`.
     }
 
     return res;
