@@ -1,10 +1,8 @@
 // HoNooD <honood@gmail.com>
-// 2024.06.06 13:03
+// 2024.06.06 13:35
 
-// 191. Number of 1 Bits
-// https://leetcode.com/problems/number-of-1-bits/?envType=study-plan-v2&envId=top-interview-150
-
-// A set bit refers to a bit in the binary representation of a number that has a value of 1.
+// 201. Bitwise AND of Numbers Range
+// https://leetcode.com/problems/bitwise-and-of-numbers-range/?envType=study-plan-v2&envId=top-interview-150
 
 // https://en.wikipedia.org/wiki/Bitwise_operation
 // https://en.wikipedia.org/wiki/Bitwise_operations_in_C
@@ -99,18 +97,30 @@
 auto __unsync_ios_stdio = ios::sync_with_stdio(false);
 auto __untie_cin = cin.tie(nullptr);
 
+// NOT use!
+// Time Limit Exceeded
 class Solution {
 public:
-  // https://en.wikipedia.org/wiki/Hamming_weight
-  int hammingWeight(int n) {
-    assert(n > 0);
-
-    int res = 0;
-    for (int i = 0; i < std::numeric_limits<int>::digits; ++i) {
-      // Parentheses are not needed as `>>` has higher precedence than `&`.
-      res += (n >> i) & 1;
+  int rangeBitwiseAnd(int left, int right) {
+    int res = std::numeric_limits<int>::max();
+    for (int i = left; i <= right; ++i) {
+      res &= i;
     }
 
     return res;
+  }
+};
+
+class Solution_2 {
+public:
+  int rangeBitwiseAnd(int left, int right) {
+    int shift = 0;
+    while (left < right) {
+      left >>= 1;
+      right >>= 1;
+      ++shift;
+    }
+
+    return left << shift;
   }
 };
