@@ -17,7 +17,7 @@ public:
     }
 
     int maxCount = 0;
-    for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < n - 1; ++i) {
       unordered_map<string, int> slopeCount{};
       int duplicate = 1; // 1 means the base point itself
       int currMax = 0;
