@@ -53,6 +53,7 @@ private:
     // std::stringstream is OK, too.
     istringstream ss{s};
     string word{};
+    // https://en.cppreference.com/w/cpp/string/basic_string/operator_ltltgtgt
     // https://en.cppreference.com/w/cpp/io/basic_ios/operator_bool
     while (ss >> word) {
       words.emplace_back(word);
