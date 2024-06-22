@@ -1,7 +1,41 @@
-// HoNooD
-// 2022.06.10 01:25
+// HoNooD <honood@gmail.com>
+// 2024.06.22 12:52
 
-// https://leetcode.com/problems/zigzag-conversion/
+// 6. Zigzag Conversion
+// https://leetcode.com/problems/zigzag-conversion/description/?envType=study-plan-v2&envId=top-interview-150
+
+auto __unsync_ios_stdio = ios::sync_with_stdio(false);
+auto __untie_cin = cin.tie(nullptr);
+
+// Best
+class Solution {
+public:
+  string convert(string s, int numRows) {
+    assert(numRows > 0);
+    if (numRows == 1 || s.size() <= numRows) {
+      return s;
+    }
+
+    vector<string> rows(numRows);
+    int currRow = 0;
+    bool goingDown = false;
+
+    for (auto const& c : s) {
+      rows[currRow] += c;
+
+      if (currRow == 0 || currRow == numRows - 1) {
+        goingDown = !goingDown;
+      }
+      currRow += goingDown ? 1 : -1;
+    }
+
+    string res{};
+    for (auto& row : rows) {
+      res += row;
+    }
+    return res;
+  }
+};
 
 // For this problem,
 //
@@ -19,7 +53,7 @@
 // 4 6 12 14 20
 // 5   13
 //
-class Solution {
+class Solution_2 {
 public:
   std::string convert(std::string s, int num_rows) {
     if (s.empty() || num_rows == 1) {
@@ -86,15 +120,3 @@ public:
     return result;
   }
 };
-
-int main(int argc, char* argv[]) {
-  int num_rows = 4;
-  std::string s{"MyNameIsHoNooD"};
-  
-  Solution solution;
-  std::cout << solution.convert(s, 3) << std::endl;
-  std::cout << solution.convert(s, 4) << std::endl;
-  std::cout << solution.convert("A", 3) << std::endl;
-
-  return 0;
-}
