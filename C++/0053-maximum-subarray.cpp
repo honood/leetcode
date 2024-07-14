@@ -44,15 +44,8 @@ public:
     int maxSum = nums[0];
     int currSum = nums[0];
     for (int i = 1; i < nums.size(); ++i) {
-      if (int s = currSum + nums[i]; nums[i] > s) {
-        currSum = nums[i];
-      } else {
-        currSum = s;
-      }
-
-      if (currSum > maxSum) {
-        maxSum = currSum;
-      }
+      currSum = std::max(currSum + nums[i], nums[i]);
+      maxSum = std::max(maxSum, currSum);
     }
 
     return maxSum;
@@ -72,9 +65,7 @@ public:
     int currSum = 0;
     for (int i = 0; i < nums.size(); ++i) {
       currSum += nums[i];
-      if (currSum > maxSum) {
-        maxSum = currSum;
-      }
+      maxSum = std::max(maxSum, currSum);
 
       if (currSum < 0) {
         currSum = 0;
