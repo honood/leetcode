@@ -4,15 +4,95 @@
 // 221. Maximal Square
 // https://leetcode.com/problems/maximal-square/description/?envType=study-plan-v2&envId=top-interview-150
 
-// https://en.wikipedia.org/wiki/Dynamic_programming
-
 auto __unsync_ios_stdio = ios::sync_with_stdio(false);
 auto __untie_cin = cin.tie(nullptr);
 
-// Dynamic Programming (DP)
 class Solution {
 public:
-  int maximalSquare(vector<vector<char>> const& matrix) {
+  int maximalSquare(vector<vector<char>>& matrix) {
+    return maximal_square_v3(matrix);
+  }
+
+private:
+  // Brute Force
+  //
+  // Note: result in Time Limit Exceeded (TLE)
+  //
+  // - Time complexity: O(m*n*(min(m, n)^2))
+  // - Space complexity: O(1)
+  int maximal_square_v1(vector<vector<char>> const& matrix) {
+    if (matrix.empty() || matrix[0].empty()) {
+      return 0;
+    }
+
+    int m = matrix.size();
+    int n = matrix[0].size();
+
+    int max_side = 0;
+
+    for (int i = 0; i < m; ++i) {
+      for (int j = 0; j < n; ++j) {
+        if (matrix[i][j] != '1') {
+          continue;
+        }
+
+        // - For each cell that contains `1`, try to form a square with that
+        //   cell as the top-left corner.
+        // - Check all potential square sizes by expanding the square until a
+        //   cell with `0` is encountered or the matrix boundary is reached.
+        // ┌───┬───┬───┬───┬───┐
+        // │   │   │   │   │   │
+        // ├───┼───┼───┼───┼───┤
+        // │   │ ●––––>│   │   │
+        // ├───┼─│─┼───┼───┼───┤
+        // │   │ v │   │   │   │
+        // ├───┼───┼───┼───┼───┤
+        // │   │   │   │   │   │
+        // └───┴───┴───┴───┴───┘
+
+        // minimun square size is 1x1
+        int side = 1;
+        bool valid_square = true;
+        while (valid_square && i + side < m && j + side < n) {
+          // check the next row of the square
+          for (int jj = j; jj <= j + side; ++jj) {
+            if (matrix[i + side][jj] == '0') {
+              valid_square = false;
+              break;
+            }
+          }
+
+          if (!valid_square) {
+            break;
+          }
+
+          // check the next column of the square
+          for (int ii = i; ii <= i + side; ++ii) {
+            if (matrix[ii][j + side] == '0') {
+              valid_square = false;
+              break;
+            }
+          }
+
+          // if valid, expand the square
+          if (valid_square) {
+            ++side;
+          }
+        }
+
+        max_side = std::max(max_side, side);
+      }
+    }
+
+    return max_side * max_side;
+  }
+
+  // Dynamic Programming (DP)
+  // https://leetcode.com/tag/dynamic-programming/
+  //
+  // - Time complexity: O(m*n)
+  // - Space complexity: O(m*n)
+  int maximal_square_v2(vector<vector<char>> const& matrix) {
     if (matrix.empty() || matrix[0].empty()) {
       return 0;
     }
@@ -42,6 +122,19 @@ public:
             // largest square that ends at `(i, j)` is influenced by the squares
             // that end at the positions directly above it, directly to the left
             // of it, and diagonally above-left to it.
+            //     ┌───┬───┬───┬───┬───┬───┐
+            //     │   │   │   │   │   │   │
+            //     ├───╔═══╪═══╪═══╗───┼───┤
+            //     │   ║ 1 │ 1 │ 1 ║   │   │
+            //     ├───╫───╆━━━╔═══╬═══╗───┤
+            //     │   ║ 1 ┃ 1 ║ 1 ║ 1 ║   │
+            //     ├───╫───╔═══╬═══╬───╫───┤
+            //     │   ║ 1 ║ 1 ║ 1 ║ 1 ║   │
+            //     ├───╚═══╬═══╩═══╬═══╝───┤
+            //     │   │   ║ 1 │ 1 ║[1]┃   │
+            //     ├───┼───╚═══╪═══╝━━━╃───┤
+            //     │   │   │   │   │   │   │
+            //     └───┴───┴───┴───┴───┴───┘
             dp[i][j] = std::min({
                          dp[i - 1][j],    // square ending directly above
                          dp[i][j - 1],    // square ending directly to the left
@@ -57,7 +150,12 @@ public:
     return max_side * max_side;
   }
 
-  int maximal_square_with_space_opt(vector<vector<char>> const& matrix) {
+  // Dynamic Programming (DP)
+  // https://leetcode.com/tag/dynamic-programming/
+  //
+  // - Time complexity: O(m*n)
+  // - Space complexity: O(n)
+  int maximal_square_v3(vector<vector<char>> const& matrix) {
     if (matrix.empty() || matrix[0].empty()) {
       return 0;
     }
@@ -92,46 +190,46 @@ public:
 
     return max_side * max_side;
   }
-};
 
-// The Histogram-Based Approach transforms each row of the matrix into a
-// histogram and then calculates the largest square area that can be formed in
-// that histogram. This approach is typically used to find the largest rectangle
-// area but can be adapted to find the largest square area.
-//
-// 1. Building the Histogram:
-//   - For each row in the matrix, construct a histogram where the height of
-//     each bar represents the number of consecutive '1's up to that row.
-//   - Essentially, treat each row as the base and calculate the heights of
-//     histogram bars from the current row upwards.
-// 2. Calculating Maximum Rectangle Area:
-//   - Use a stack to efficiently calculate the largest rectangle area in the
-//     histogram.
-//   - While calculating the rectangle area, ensure the rectangle can also form
-//     a square by comparing the height and width.
-//
-// Note: Compare the following matrix and histogram (or use a professional
-// graphing tool to visualize them), and you might understand how the
-// Histogram-Based Approach works:
-// ┌───┬───┬───┬───┬───┐
-// │ 1 │ 0 │ 1 │ 0 │ 0 │
-// ├───┼───┼───┼───┼───┤
-// │ 1 │ 0 │ 1 │ 1 │ 1 │
-// ├───┼───┼───┼───┼───┤
-// │ 1 │ 1 │ 1 │ 1 │ 1 │
-// ├───┼───┼───┼───┼───┤
-// │ 1 │ 0 │ 0 │ 1 │ 0 │
-// └───┴───┴───┴───┴───┘
-//          6
-//       5  ██
-//       ██ ██
-//       ██ ██    3
-// 2     ██ ██ 2  ██
-// ██ 1  ██ ██ ██ ██
-// ██ ██ ██ ██ ██ ██
-class Solution_2 {
-public:
-  int maximalSquare(vector<vector<char>> const& matrix) {
+  // The Histogram-Based Approach transforms each row of the matrix into a
+  // histogram and then calculates the largest square area that can be formed in
+  // that histogram. This approach is typically used to find the largest
+  // rectangle area but can be adapted to find the largest square area.
+  //
+  // 1. Building the Histogram:
+  //   - For each row in the matrix, construct a histogram where the height of
+  //     each bar represents the number of consecutive '1's up to that row.
+  //   - Essentially, treat each row as the base and calculate the heights of
+  //     histogram bars from the current row upwards.
+  // 2. Calculating Maximum Rectangle Area:
+  //   - Use a stack to efficiently calculate the largest rectangle area in the
+  //     histogram.
+  //   - While calculating the rectangle area, ensure the rectangle can also
+  //     form a square by comparing the height and width.
+  //
+  // Note: Compare the following matrix and histogram (or use a professional
+  // graphing tool to visualize them), and you might understand how the
+  // Histogram-Based Approach works:
+  // ┌───┬───┬───┬───┬───┐
+  // │ 1 │ 0 │ 1 │ 0 │ 0 │
+  // ├───┼───┼───┼───┼───┤
+  // │ 1 │ 0 │ 1 │ 1 │ 1 │
+  // ├───┼───┼───┼───┼───┤
+  // │ 1 │ 1 │ 1 │ 1 │ 1 │
+  // ├───┼───┼───┼───┼───┤
+  // │ 1 │ 0 │ 0 │ 1 │ 0 │
+  // └───┴───┴───┴───┴───┘
+  //          6
+  //       5  ██
+  //       ██ ██
+  //       ██ ██    3
+  // 2     ██ ██ 2  ██
+  // ██ 1  ██ ██ ██ ██
+  // ██ ██ ██ ██ ██ ██
+  //
+  // - Time complexity: O(m*n)
+  // - Space complexity: O(n)
+  int maximal_square_v4(vector<vector<char>> const& matrix) {
     if (matrix.empty() || matrix[0].empty()) {
       return 0;
     }
@@ -159,7 +257,11 @@ public:
     return max_area;
   }
 
-private:
+  // using monotonic increasing stack
+  // https://leetcode.com/tag/monotonic-stack/
+  //
+  // - Time complexity: O(n)
+  //
   // Reference:
   //   84. Largest Rectangle in Histogram
   //     - https://leetcode.com/problems/largest-rectangle-in-histogram/description/
