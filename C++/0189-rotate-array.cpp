@@ -7,15 +7,24 @@
 auto __unsync_ios_stdio = ios::sync_with_stdio(false);
 auto __untie_cin = cin.tie(nullptr);
 
-// nums = [1, 2, 3, 4, 5, 6, 7]
-// k = 3
-//
-// => [7, 6, 5, 4, 3, 2, 1]
-// => [5, 6, 7, 4, 3, 2, 1]
-// => [5, 6, 7, 1, 2, 3, 4]
 class Solution {
 public:
   void rotate(vector<int>& nums, int k) {
+    rotate_v1(nums, k);
+  }
+
+private:
+  // nums = [1, 2, 3, 4, 5, 6, 7]
+  // k = 3
+  //
+  // => [7, 6, 5, 4, 3, 2, 1]
+  // => [5, 6, 7, 4, 3, 2, 1]
+  // => [5, 6, 7, 1, 2, 3, 4]
+  //
+  // Complexity Analysis:
+  // - Time complexity: O(n)
+  // - Space complexity: O(1)
+  void rotate_v1(vector<int>& nums, int k) {
     if (k <= 0) {
       return;
     }
@@ -34,11 +43,11 @@ public:
     std::reverse(nums.begin(), std::next(nums.begin(), k));
     std::reverse(std::next(nums.begin(), k), nums.end());
   }
-};
 
-class Solution_2 {
-public:
-  void rotate(vector<int>& nums, int k) {
+  // Complexity Analysis:
+  // - Time complexity: O(n)
+  // - Space complexity: O(1)
+  void rotate_v2(vector<int>& nums, int k) {
     if (k <= 0) {
       return;
     }
@@ -56,18 +65,19 @@ public:
     // Note: `std::rotate` performs a LEFT rotation!
     std::rotate(nums.begin(), std::next(nums.begin(), n - k), nums.end());
   }
-};
 
-// Cyclic Replacements
-//
-// Moves elements to their new positions in a cyclic manner. Each element is
-// placed directly into its correct position by a sequence of swaps.
-//
-// Note: potentially offers optimal time and space performance, but it is
-// complex and difficult to understand.
-class Solution_3 {
-public:
-  void rotate(vector<int>& nums, int k) {
+  // Cyclic Replacements
+  //
+  // Moves elements to their new positions in a cyclic manner. Each element is
+  // placed directly into its correct position by a sequence of swaps.
+  //
+  // Note: potentially offers optimal time and space performance, but it is
+  // complex and difficult to understand.
+  //
+  // Complexity Analysis:
+  // - Time complexity: O(n)
+  // - Space complexity: O(1)
+  void rotate_v3(vector<int>& nums, int k) {
     if (k <= 0) {
       return;
     }
@@ -83,28 +93,28 @@ public:
     }
 
     // count of elements moved to their correct positions
-    int movedCount = 0;
+    int moved_count = 0;
     // Note: When `n` and `k` have a Greatest Common Divisor (GCD) greater than
     // `1`, a single inner loop is insufficient to move all elements,
     // necessitating multiple loops. For example, nums = [1, 2, 3, 4] and k = 2.
-    for (int startIdx = 0; movedCount < n; ++startIdx) {
-      int currIdx = startIdx;
-      int toMoveVal = nums[startIdx];
+    for (int start_idx = 0; moved_count < n; ++start_idx) {
+      int curr_idx = start_idx;
+      int to_move_val = nums[start_idx];
       do {
-        int moveToIdx = (currIdx + k) % n;
+        int move_to_idx = (curr_idx + k) % n;
 
-        std::swap(nums[moveToIdx], toMoveVal);
+        std::swap(nums[move_to_idx], to_move_val);
 
-        currIdx = moveToIdx;
-        ++movedCount;
-      } while (startIdx != currIdx);
+        curr_idx = move_to_idx;
+        ++moved_count;
+      } while (start_idx != curr_idx);
     } // for
   }
-};
 
-class Solution_4 {
-public:
-  void rotate(vector<int>& nums, int k) {
+  // Complexity Analysis:
+  // - Time complexity: O(n)
+  // - Space complexity: O(n)
+  void rotate_v4(vector<int>& nums, int k) {
     if (k <= 0) {
       return;
     }
@@ -127,11 +137,11 @@ public:
       nums[(i + k) % n] = copy[i];
     }
   }
-};
 
-class Solution_5 {
-public:
-  void rotate(vector<int>& nums, int k) {
+  // Complexity Analysis:
+  // - Time complexity: O(n)
+  // - Space complexity: O(n)
+  void rotate_v5(vector<int>& nums, int k) {
     if (k <= 0) {
       return;
     }
