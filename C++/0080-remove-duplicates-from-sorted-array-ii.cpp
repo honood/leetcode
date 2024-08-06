@@ -9,6 +9,8 @@ auto __untie_cin = cin.tie(nullptr);
 
 class Solution {
 public:
+  // - Time complexity: O(n)
+  // - Space complexity: O(1)
   int removeDuplicates(vector<int>& nums) {
     int n = nums.size();
     if (n <= 2) {
@@ -18,7 +20,7 @@ public:
     int overwrite = 2;
     for (int i = 2; i < n; ++i) {
       if (nums[i] != nums[overwrite - 2]) {
-        if (overwrite != i) {
+        if (overwrite != i && nums[overwrite] != nums[i]) {
           nums[overwrite] = nums[i];
         }
         ++overwrite;
