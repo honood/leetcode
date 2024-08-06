@@ -9,6 +9,8 @@ auto __untie_cin = cin.tie(nullptr);
 
 class Solution {
 public:
+  // - Time complexity: O(n)
+  // - Space complexity: O(1)
   int removeDuplicates(vector<int>& nums) {
     int n = nums.size();
     if (n <= 1) {
