@@ -10,7 +10,7 @@ auto __untie_cin = cin.tie(nullptr);
 class Solution {
 public:
   int maxProfit(vector<int>& prices) {
-    return max_profit_v4(prices);
+    return max_profit_v3(prices);
   }
 
 private:
@@ -19,6 +19,7 @@ private:
   // The brute force approach to solving the problem involves trying all
   // possible combinations of buy and sell days to find the maximum profit.
   //
+  // Complexity Analysis:
   // - Time complexity: O(2^n)  // TODO: how to understand? recursion tree?
   // - Space complexity: O(n)
   int max_profit_v1(vector<int> const& prices) {
@@ -57,6 +58,7 @@ private:
   // Brute Force with Memoization
   // https://leetcode.com/tag/memoization/
   //
+  // Complexity Analysis:
   // - Time complexity: O(n^3) // ?
   //   - Number of States: There are `n` different starting positions, where `n`
   //     is the number of days.
@@ -105,15 +107,12 @@ private:
   // Greedy algorithm
   // https://leetcode.com/tag/greedy/
   //
-  // Time complexity: O(n)
+  // Complexity Analysis:
+  // - Time complexity: O(n)
+  // - Space complexity: O(1)
   int max_profit_v3(vector<int> const& prices) {
-    int n = prices.size();
-    if (n <= 1) {
-      return 0;
-    }
-
     int max_profit = 0;
-    for (int i = 1; i < n; ++i) {
+    for (int i = 1; i < prices.size(); ++i) {
       if (prices[i] > prices[i - 1]) {
         max_profit += prices[i] - prices[i - 1];
       }
@@ -125,7 +124,9 @@ private:
   // Dynamic Programming (DP)
   // https://leetcode.com/tag/dynamic-programming/
   //
-  // Time complexity: O(n)
+  // Complexity Analysis:
+  // - Time complexity: O(n)
+  // - Space complexity: O(n)
   int max_profit_v4(vector<int> const& prices) {
     int n = prices.size();
     if (n <= 1) {
@@ -165,6 +166,7 @@ private:
   // Top-Down Dynamic Programming (DP)
   // https://leetcode.com/tag/dynamic-programming/
   //
+  // Complexity Analysis:
   // - Time complexity: O(n)
   // - Space complexity: O(n)
   int max_profit_v5(vector<int> const& prices) {
