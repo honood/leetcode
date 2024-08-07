@@ -23,21 +23,23 @@ public:
   // 3. [1, 3, 1]
   // 4. [9, 7, 6, 2, 1]
   // 5. [25, 8, 5, 3, 3]
+  //
+  // Complexity Analysis:
+  // - Time complexity: O(n * log(n))
+  // - Space complexity: O(1)
   int hIndex(vector<int>& citations) {
-    if (citations.empty()) {
-      return 0;
-    }
+    // sort `citations` in descending order
+    std::sort(citations.begin(), citations.end(), std::greater<int>{});
 
-    std::sort(citations.begin(), citations.end());
-
-    int n = citations.size();
-    for (int i = 0; i < n; ++i) {
-      int h = n - i;
-      if (citations[i] >= h) {
-        return h;
+    int h = 0;
+    for (int i = 0; i < citations.size(); ++i) {
+      if (citations[i] >= i + 1) {
+        h = i + 1;
+      } else {
+        break;
       }
     }
 
-    return 0;
+    return h;
   }
 };
