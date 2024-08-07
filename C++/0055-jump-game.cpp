@@ -10,13 +10,14 @@ auto __untie_cin = cin.tie(nullptr);
 class Solution {
 public:
   bool canJump(vector<int>& nums) {
-    return can_jump_v1(nums);
+    return can_jump_v2(nums);
   }
 
 private:
   // Greedy algorithm
   // https://leetcode.com/tag/greedy/
   //
+  // Complexity Analysis:
   // - Time complexity: O(n)
   // - Space complexity: O(1)
   bool can_jump_v1(vector<int> const& nums) {
@@ -26,24 +27,8 @@ private:
 
     int n = nums.size();
     if (n == 1) {
-      return nums[0] >= 0;
+      return true;
     }
-
-    /*
-    // debug code
-    bool can_reach = false;
-    int end = n - 1;
-    for (int i = n - 2; i >= 0; --i) {
-      if (i + nums[i] >= end) {
-        can_reach = true;
-        end = i;
-      } else {
-        can_reach = false;
-      }
-    }
-
-    return can_reach;
-    */
 
     int end = n - 1;
     for (int i = n - 2; i >= 0; --i) {
@@ -58,6 +43,7 @@ private:
   // Greedy algorithm
   // https://leetcode.com/tag/greedy/
   //
+  // Complexity Analysis:
   // - Time complexity: O(n)
   // - Space complexity: O(1)
   bool can_jump_v2(vector<int> const& nums) {
@@ -67,7 +53,7 @@ private:
 
     int n = nums.size();
     if (n == 1) {
-      return nums[0] >= 0;
+      return true;
     }
 
     int max_reachable = 0;
@@ -92,6 +78,7 @@ private:
   // Dynamic Programming (DP)
   // https://leetcode.com/tag/dynamic-programming/
   //
+  // Complexity Analysis:
   // - Time complexity: O(n^2)
   // - Space complexity: O(n)
   bool can_jump_v3(vector<int> const& nums) {
@@ -101,7 +88,7 @@ private:
 
     int n = nums.size();
     if (n == 1) {
-      return nums[0] >= 0;
+      return true;
     }
 
     vector<bool> dp(n, false);
@@ -121,11 +108,11 @@ private:
   }
 
   // Brute Force
+  // Note: result in Time Limit Exceeded (TLE)
   //
+  // Complexity Analysis:
   // - Time complexity: exponential time (recursion tree)
   // - Space complexity: O(n)
-  //
-  // Note: result in Time Limit Exceeded (TLE)
   bool can_jump_v4(vector<int> const& nums) {
     if (nums.empty()) {
       return false;
@@ -133,7 +120,7 @@ private:
 
     int n = nums.size();
     if (n == 1) {
-      return nums[0] >= 0;
+      return true;
     }
 
     return can_jump_from_position(0, nums);
