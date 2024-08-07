@@ -10,21 +10,21 @@ auto __untie_cin = cin.tie(nullptr);
 class Solution {
 public:
   int maxProfit(vector<int>& prices) {
-    return max_profit_v3(prices);
+    return max_profit_v2(prices);
   }
 
 private:
   // Brute Force
-  //
   // Note: result in Time Limit Exceeded (TLE)
   //
-  // Time complexity: O(n^2)
+  // Complexity Analysis:
+  // - Time complexity: O(n^2)
+  // - Space complexity: O(1)
   int max_profit_v1(vector<int> const& prices) {
     int n = prices.size();
     if (n <= 1) {
       return 0;
     }
-
 
     int max_profit = 0;
 
@@ -52,29 +52,10 @@ private:
   // Dynamic Programming (DP)
   // https://leetcode.com/tag/dynamic-programming/
   //
-  // Time complexity: O(n)
+  // Complexity Analysis:
+  // - Time complexity: O(n)
+  // - Space complexity: O(1)
   int max_profit_v2(vector<int> const& prices) {
-    int n = prices.size();
-    if (n <= 1) {
-      return 0;
-    }
-
-    int max_profit = std::numeric_limits<int>::min();
-    int buy = prices[0];
-    for (int i = 1; i < n; ++i) {
-      int sell = prices[i];
-      buy = std::min(buy, prices[i - 1]);
-      max_profit = std::max(max_profit, sell - buy);
-    }
-
-    return max_profit < 0 ? 0 : max_profit;
-  }
-
-  // Dynamic Programming (DP)
-  // https://leetcode.com/tag/dynamic-programming/
-  //
-  // Time complexity: O(n)
-  int max_profit_v3(vector<int> const& prices) {
     int min_price = std::numeric_limits<int>::max();
     int max_profix = 0;
     for (int price : prices) {
