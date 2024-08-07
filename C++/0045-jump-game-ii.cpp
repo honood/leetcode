@@ -15,11 +15,11 @@ public:
 
 private:
   // Brute Force
+  // Note: result in Time Limit Exceeded (TLE)
   //
+  // Complexity Analysis:
   // - Time complexity: exponential time (recursion tree)
   // - Space complexity: O(n)
-  //
-  // Note: result in Time Limit Exceeded (TLE)
   int jump_v1(vector<int> const& nums) {
     int n = nums.size();
     // no jump needed if there's only one element
@@ -60,6 +60,7 @@ private:
   // Brute Force with Memoization
   // https://leetcode.com/tag/memoization/
   //
+  // Complexity Analysis:
   // - Time complexity: O(n^2)
   // - Space complexity: O(n)
   int jump_v2(vector<int> const& nums) {
@@ -105,6 +106,7 @@ private:
   // Dynamic Programming (DP)
   // https://leetcode.com/tag/dynamic-programming/
   //
+  // Complexity Analysis:
   // - Time complexity: O(n^2)
   // - Space complexity: O(n)
   int jump_v3(vector<int> const& nums) {
@@ -132,6 +134,7 @@ private:
   // Greedy algorithm
   // https://leetcode.com/tag/greedy/
   //
+  // Complexity Analysis:
   // - Time complexity: O(n)
   // - Space complexity: O(1)
   int jump_v4(vector<int> const& nums) {
@@ -159,6 +162,10 @@ private:
 
         ++jumps;
         curr_end = farthest;
+        // If the current end has reached or surpassed the last index
+        if (curr_end >= n - 1) {
+          return jumps;
+        }
       }
     }
 
