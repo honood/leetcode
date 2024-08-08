@@ -42,7 +42,7 @@ public:
   }
 
   int getRandom() {
-    return nums_[randomIndex()];
+    return nums_[dist_(gen_) % nums_.size()];
   }
 
 private:
@@ -50,10 +50,7 @@ private:
   unordered_map<int, int> indices_{};
 
   std::mt19937 gen_{std::random_device{}()};
-  int randomIndex() {
-    std::uniform_int_distribution<> distrib(0, nums_.size() - 1);
-    return distrib(gen_);
-  }
+  std::uniform_int_distribution<> dist_{};
 };
 
 /**
