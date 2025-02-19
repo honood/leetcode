@@ -10,19 +10,10 @@ auto __uncin_tie = std::cin.tie(nullptr);
 class Solution {
 public:
   vector<bool> kidsWithCandies(vector<int>& candies, int extra_candies) {
-    vector<int> left_max_candies(candies.size(), 0);
-    for (int i = 1; i < candies.size(); ++i) {
-      left_max_candies[i] = std::max(left_max_candies[i - 1], candies[i - 1]);
-    }
-
-    vector<int> right_max_candies(candies.size(), 0);
-    for (int i = candies.size() - 2; i >= 0; --i) {
-      right_max_candies[i] = std::max(right_max_candies[i + 1], candies[i + 1]);
-    }
-
     vector<bool> result(candies.size(), false);
+    int max_candies = *std::max_element(candies.cbegin(), candies.cend());
     for (int i = 0; i < candies.size(); ++i) {
-      result[i] = candies[i] + extra_candies >= std::max(left_max_candies[i], right_max_candies[i]);
+      result[i] = candies[i] + extra_candies >= max_candies;
     }
     return result;
   }
