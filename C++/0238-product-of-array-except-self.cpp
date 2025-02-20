@@ -3,12 +3,13 @@
 
 // 238. Product of Array Except Self
 // https://leetcode.com/problems/product-of-array-except-self/?envType=study-plan-v2&envId=top-interview-150
+// https://leetcode.com/problems/product-of-array-except-self/description/?envType=study-plan-v2&envId=leetcode-75
 
 // Note: You must write an algorithm that runs in O(n) time and without using
 // the division operation.
 
-auto __unsync_ios_stdio = ios::sync_with_stdio(false);
-auto __untie_cin = cin.tie(nullptr);
+auto __unsync_with_stdio = std::ios::sync_with_stdio(false);
+auto __uncin_tie = std::cin.tie(nullptr);
 
 class Solution {
 public:
@@ -29,7 +30,7 @@ private:
   //     to `i - 1`.
   //   - `right_products[i]` stores the product of all elements from `i + 1` to
   //     the end.
-  // 2. Combine arrays: `answer[i] = left_products[i] * right_products[i]`
+  // 2. Combine arrays: `result[i] = left_products[i] * right_products[i]`
   //
   // Complexity Analysis:
   // - Time complexity: O(n)
@@ -47,12 +48,11 @@ private:
       right_products[i] = right_products[i + 1] * nums[i + 1];
     }
 
-    vector<int> answer(n);
+    vector<int> result(n);
     for (int i = 0; i < n; ++i) {
-      answer[i] = left_products[i] * right_products[i];
+      result[i] = left_products[i] * right_products[i];
     }
-
-    return answer;
+    return result;
   }
 
   // Prefix Sum
@@ -66,24 +66,24 @@ private:
   // - Space complexity: O(1)
   vector<int> product_except_self_v2(vector<int> const& nums) {
     int n = nums.size();
-    vector<int> answer(n, 1);
+    vector<int> result(n, 1);
 
-    // Calculate left products: `answer[i]` is the product of elements to the
+    // Calculate left products: `result[i]` is the product of elements to the
     // left of `i`
     //
-    // Note: `answer[0]` remains `1` since there are no elements to the left
+    // Note: `result[0]` remains `1` since there are no elements to the left
     for (int i = 1; i < n; ++i) {
-      answer[i] = answer[i - 1] * nums[i - 1];
+      result[i] = result[i - 1] * nums[i - 1];
     }
 
-    // Calculate right products: `right_products` accumulates the product of
+    // Calculate right products: `right_product` accumulates the product of
     // elements to the right of `i`
-    int right_products = 1;
+    int right_product = 1;
     for (int i = n - 1; i >= 0; --i) {
-      answer[i] *= right_products;
-      right_products *= nums[i];
+      result[i] *= right_product;
+      right_product *= nums[i];
     }
 
-    return answer;
+    return result;
   }
 };
