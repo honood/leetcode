@@ -1,71 +1,74 @@
-// HoNooD
-// 2022.09.16 00:11
+// HoNooD <honood@gmail.com>
+// 2025.03.02 23:44
 
-// https://leetcode.com/problems/reverse-linked-list/
-// https://leetcode.cn/problems/reverse-linked-list/
+// 206. Reverse Linked List
+// https://leetcode.com/problems/reverse-linked-list/description/?envType=study-plan-v2&envId=leetcode-75
 
-#include <iostream>
+auto __unsync_with_stdio = std::ios::sync_with_stdio(false);
+auto __uncin_tie = std::cin.tie(nullptr);
 
-struct ListNode {
-  int val;
-  ListNode* next;
-
-  // Delegating constructor
-  // https://en.cppreference.com/w/cpp/language/constructor#Delegating_constructor
-  //
-  ListNode(int x, ListNode* next) : val(x), next(next) {}
-  explicit ListNode(int x) : ListNode(x, nullptr) {}
-  ListNode() : ListNode(0) {}
-};
+// Definition for singly-linked list.
+//
+// struct ListNode {
+//   int val;
+//   ListNode* next;
+//   ListNode() : val(0), next(nullptr) {}
+//   ListNode(int x) : val(x), next(nullptr) {}
+//   ListNode(int x, ListNode* next) : val(x), next(next) {}
+// };
 
 class Solution {
- public:
+public:
   ListNode* reverseList(ListNode* head) {
-    if (!head) {
-      return nullptr;
+    return reverse_list_v2(head);
+  }
+
+private:
+  // In-place Reversal / Three Pointers Technique
+  //
+  // - Time complexity: O(n)
+  // - Space complexity: O(1)
+  ListNode* reverse_list_v1(ListNode* head) {
+    ListNode* prev = nullptr;
+    ListNode* curr = head;
+
+    while (curr != nullptr) {
+      ListNode* next = curr->next;
+      curr->next = prev;
+      prev = curr;
+      curr = next;
     }
 
-    ListNode* res = nullptr;
-    while (head) {
-      ListNode* pre_node = head;
-      head = head->next;
+    return prev;
+  }
 
-      pre_node->next = res;
-      res = pre_node;
+  // Head Insertion
+  //
+  // - Time complexity: O(n)
+  // - Space complexity: O(1)
+  ListNode* reverse_list_v2(ListNode* head) {
+    ListNode dummy_head{};
+    while (head != nullptr) {
+      ListNode* temp = head->next;
+      head->next = dummy_head.next;
+      dummy_head.next = head;
+      head = temp;
+    }
+    return dummy_head.next;
+  }
+
+  // - Time complexity: O(n)
+  // - Space complexity: O(n)
+  ListNode* reverse_list_v3(ListNode* head) {
+    if (head == nullptr || head->next == nullptr) {
+      return head;
     }
 
-    return res;
+    // After reversal, the node pointed by `head->next` becomes the tail
+    // of the reversed sublist.
+    ListNode* new_head = reverse_list_v3(head->next);
+    head->next->next = head;
+    head->next = nullptr;
+    return new_head;
   }
 };
-
-static void printList(ListNode* head) {
-  if (!head) {
-    return;
-  }
-
-  while (head) {
-    std::cout << head->val << ' ';
-    head = head->next;
-  }
-  std::cout << '\n';
-}
-
-int main() {
-  ListNode* head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-
-  std::cout << "Before reversing list: ";
-  printList(head);
-
-  std::cout << "After reversing list: ";
-  head = Solution{}.reverseList(head);
-  printList(head);
-
-  while (head) {
-    ListNode* tmp = head;
-    head = head->next;
-
-    delete tmp;
-  }
-
-  return 0;
-}
