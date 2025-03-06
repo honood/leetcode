@@ -1,0 +1,3586 @@
+{
+  "props": {
+    "pageProps": {
+      "dehydratedState": {
+        "mutations": [],
+        "queries": [
+          {
+            "state": {
+              "data": {
+                "studyPlanV2Detail": {
+                  "slug": "leetcode-75",
+                  "name": "LeetCode 75",
+                  "highlight": "Ace Coding Interview with 75 Qs",
+                  "staticCoverPicture": "https://assets.leetcode.com/static_assets/others/LeetCode_75static_cover_picture.png",
+                  "colorPalette": "blue",
+                  "threeDimensionUrl": "https://prod.spline.design/ud5aQq6CwWHbQhFB/scene.splinecode",
+                  "description": "75 Essential \u0026 Trending Problems\r\nMust-do problem list for interview prep\r\nBest for 1~3 month of prep time",
+                  "premiumOnly": false,
+                  "needShowTags": false,
+                  "awardDescription": "Complete the study plan to win the badge!",
+                  "defaultLanguage": null,
+                  "award": {
+                    "name": "LeetCode 75",
+                    "config": {
+                      "icon": "https://assets.leetcode.com/static_assets/others/LeetCode_75.png",
+                      "iconGif": "https://assets.leetcode.com/static_assets/others/LeetCode_75.gif",
+                      "iconGifBackground": "https://assets.leetcode.com/static_assets/others/badge-background.png"
+                    }
+                  },
+                  "relatedStudyPlans": [
+                    {
+                      "cover": "https://assets.leetcode.com/study_plan_v2/top-interview-150/cover",
+                      "highlight": "Must-do List for Interview Prep",
+                      "name": "Top Interview 150",
+                      "slug": "top-interview-150",
+                      "premiumOnly": false
+                    },
+                    {
+                      "cover": "https://assets.leetcode.com/study_plan_v2/top-100-liked/cover",
+                      "highlight": "100 Best Rated Problems",
+                      "name": "Top 100 Liked",
+                      "slug": "top-100-liked",
+                      "premiumOnly": false
+                    },
+                    {
+                      "cover": "https://assets.leetcode.com/study_plan_v2/premium-algo-100/cover",
+                      "highlight": "LeetCode Staff Pick",
+                      "name": "Premium Algo 100",
+                      "slug": "premium-algo-100",
+                      "premiumOnly": true
+                    },
+                    {
+                      "cover": "https://assets.leetcode.com/study_plan_v2/dynamic-programming/cover",
+                      "highlight": "10 Essential DP Patterns",
+                      "name": "Dynamic Programming",
+                      "slug": "dynamic-programming",
+                      "premiumOnly": false
+                    }
+                  ],
+                  "planSubGroups": [
+                    {
+                      "slug": "leetcode-75-24-ocvm",
+                      "name": "Array / String",
+                      "premiumOnly": false,
+                      "questionNum": 9,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "merge-strings-alternately",
+                          "title": "Merge Strings Alternately",
+                          "questionFrontendId": "1768",
+                          "paidOnly": false,
+                          "id": "1894",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "two-pointers",
+                              "name": "Two Pointers"
+                            },
+                            {
+                              "slug": "string",
+                              "name": "String"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "greatest-common-divisor-of-strings",
+                          "title": "Greatest Common Divisor of Strings",
+                          "questionFrontendId": "1071",
+                          "paidOnly": false,
+                          "id": "1146",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "math",
+                              "name": "Math"
+                            },
+                            {
+                              "slug": "string",
+                              "name": "String"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "kids-with-the-greatest-number-of-candies",
+                          "title": "Kids With the Greatest Number of Candies",
+                          "questionFrontendId": "1431",
+                          "paidOnly": false,
+                          "id": "1528",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "can-place-flowers",
+                          "title": "Can Place Flowers",
+                          "questionFrontendId": "605",
+                          "paidOnly": false,
+                          "id": "605",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "greedy",
+                              "name": "Greedy"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "reverse-vowels-of-a-string",
+                          "title": "Reverse Vowels of a String",
+                          "questionFrontendId": "345",
+                          "paidOnly": false,
+                          "id": "345",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "two-pointers",
+                              "name": "Two Pointers"
+                            },
+                            {
+                              "slug": "string",
+                              "name": "String"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "reverse-words-in-a-string",
+                          "title": "Reverse Words in a String",
+                          "questionFrontendId": "151",
+                          "paidOnly": false,
+                          "id": "151",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "two-pointers",
+                              "name": "Two Pointers"
+                            },
+                            {
+                              "slug": "string",
+                              "name": "String"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "product-of-array-except-self",
+                          "title": "Product of Array Except Self",
+                          "questionFrontendId": "238",
+                          "paidOnly": false,
+                          "id": "238",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "prefix-sum",
+                              "name": "Prefix Sum"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "increasing-triplet-subsequence",
+                          "title": "Increasing Triplet Subsequence",
+                          "questionFrontendId": "334",
+                          "paidOnly": false,
+                          "id": "334",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "greedy",
+                              "name": "Greedy"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "string-compression",
+                          "title": "String Compression",
+                          "questionFrontendId": "443",
+                          "paidOnly": false,
+                          "id": "443",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "two-pointers",
+                              "name": "Two Pointers"
+                            },
+                            {
+                              "slug": "string",
+                              "name": "String"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-25-0zdf",
+                      "name": "Two Pointers",
+                      "premiumOnly": false,
+                      "questionNum": 4,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "move-zeroes",
+                          "title": "Move Zeroes",
+                          "questionFrontendId": "283",
+                          "paidOnly": false,
+                          "id": "283",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "two-pointers",
+                              "name": "Two Pointers"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "is-subsequence",
+                          "title": "Is Subsequence",
+                          "questionFrontendId": "392",
+                          "paidOnly": false,
+                          "id": "392",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "two-pointers",
+                              "name": "Two Pointers"
+                            },
+                            {
+                              "slug": "string",
+                              "name": "String"
+                            },
+                            {
+                              "slug": "dynamic-programming",
+                              "name": "Dynamic Programming"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "container-with-most-water",
+                          "title": "Container With Most Water",
+                          "questionFrontendId": "11",
+                          "paidOnly": false,
+                          "id": "11",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "two-pointers",
+                              "name": "Two Pointers"
+                            },
+                            {
+                              "slug": "greedy",
+                              "name": "Greedy"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "max-number-of-k-sum-pairs",
+                          "title": "Max Number of K-Sum Pairs",
+                          "questionFrontendId": "1679",
+                          "paidOnly": false,
+                          "id": "1798",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "hash-table",
+                              "name": "Hash Table"
+                            },
+                            {
+                              "slug": "two-pointers",
+                              "name": "Two Pointers"
+                            },
+                            {
+                              "slug": "sorting",
+                              "name": "Sorting"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-26-43fm",
+                      "name": "Sliding Window",
+                      "premiumOnly": false,
+                      "questionNum": 4,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "maximum-average-subarray-i",
+                          "title": "Maximum Average Subarray I",
+                          "questionFrontendId": "643",
+                          "paidOnly": false,
+                          "id": "643",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "sliding-window",
+                              "name": "Sliding Window"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "maximum-number-of-vowels-in-a-substring-of-given-length",
+                          "title": "Maximum Number of Vowels in a Substring of Given Length",
+                          "questionFrontendId": "1456",
+                          "paidOnly": false,
+                          "id": "1567",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "string",
+                              "name": "String"
+                            },
+                            {
+                              "slug": "sliding-window",
+                              "name": "Sliding Window"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "max-consecutive-ones-iii",
+                          "title": "Max Consecutive Ones III",
+                          "questionFrontendId": "1004",
+                          "paidOnly": false,
+                          "id": "1046",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "binary-search",
+                              "name": "Binary Search"
+                            },
+                            {
+                              "slug": "sliding-window",
+                              "name": "Sliding Window"
+                            },
+                            {
+                              "slug": "prefix-sum",
+                              "name": "Prefix Sum"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "longest-subarray-of-1s-after-deleting-one-element",
+                          "title": "Longest Subarray of 1's After Deleting One Element",
+                          "questionFrontendId": "1493",
+                          "paidOnly": false,
+                          "id": "1586",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "dynamic-programming",
+                              "name": "Dynamic Programming"
+                            },
+                            {
+                              "slug": "sliding-window",
+                              "name": "Sliding Window"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-27-wtsd",
+                      "name": "Prefix Sum",
+                      "premiumOnly": false,
+                      "questionNum": 2,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "find-the-highest-altitude",
+                          "title": "Find the Highest Altitude",
+                          "questionFrontendId": "1732",
+                          "paidOnly": false,
+                          "id": "1833",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "prefix-sum",
+                              "name": "Prefix Sum"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "find-pivot-index",
+                          "title": "Find Pivot Index",
+                          "questionFrontendId": "724",
+                          "paidOnly": false,
+                          "id": "724",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "prefix-sum",
+                              "name": "Prefix Sum"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-28-j7cd",
+                      "name": "Hash Map / Set",
+                      "premiumOnly": false,
+                      "questionNum": 4,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "find-the-difference-of-two-arrays",
+                          "title": "Find the Difference of Two Arrays",
+                          "questionFrontendId": "2215",
+                          "paidOnly": false,
+                          "id": "1392",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "hash-table",
+                              "name": "Hash Table"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "unique-number-of-occurrences",
+                          "title": "Unique Number of Occurrences",
+                          "questionFrontendId": "1207",
+                          "paidOnly": false,
+                          "id": "1319",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "hash-table",
+                              "name": "Hash Table"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "determine-if-two-strings-are-close",
+                          "title": "Determine if Two Strings Are Close",
+                          "questionFrontendId": "1657",
+                          "paidOnly": false,
+                          "id": "1777",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "hash-table",
+                              "name": "Hash Table"
+                            },
+                            {
+                              "slug": "string",
+                              "name": "String"
+                            },
+                            {
+                              "slug": "sorting",
+                              "name": "Sorting"
+                            },
+                            {
+                              "slug": "counting",
+                              "name": "Counting"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "equal-row-and-column-pairs",
+                          "title": "Equal Row and Column Pairs",
+                          "questionFrontendId": "2352",
+                          "paidOnly": false,
+                          "id": "2428",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "hash-table",
+                              "name": "Hash Table"
+                            },
+                            {
+                              "slug": "matrix",
+                              "name": "Matrix"
+                            },
+                            {
+                              "slug": "simulation",
+                              "name": "Simulation"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-29-jubo",
+                      "name": "Stack",
+                      "premiumOnly": false,
+                      "questionNum": 3,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "removing-stars-from-a-string",
+                          "title": "Removing Stars From a String",
+                          "questionFrontendId": "2390",
+                          "paidOnly": false,
+                          "id": "2470",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "string",
+                              "name": "String"
+                            },
+                            {
+                              "slug": "stack",
+                              "name": "Stack"
+                            },
+                            {
+                              "slug": "simulation",
+                              "name": "Simulation"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "asteroid-collision",
+                          "title": "Asteroid Collision",
+                          "questionFrontendId": "735",
+                          "paidOnly": false,
+                          "id": "735",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "stack",
+                              "name": "Stack"
+                            },
+                            {
+                              "slug": "simulation",
+                              "name": "Simulation"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "decode-string",
+                          "title": "Decode String",
+                          "questionFrontendId": "394",
+                          "paidOnly": false,
+                          "id": "394",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "string",
+                              "name": "String"
+                            },
+                            {
+                              "slug": "stack",
+                              "name": "Stack"
+                            },
+                            {
+                              "slug": "recursion",
+                              "name": "Recursion"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-30-1a5r",
+                      "name": "Queue",
+                      "premiumOnly": false,
+                      "questionNum": 2,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "number-of-recent-calls",
+                          "title": "Number of Recent Calls",
+                          "questionFrontendId": "933",
+                          "paidOnly": false,
+                          "id": "969",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "design",
+                              "name": "Design"
+                            },
+                            {
+                              "slug": "queue",
+                              "name": "Queue"
+                            },
+                            {
+                              "slug": "data-stream",
+                              "name": "Data Stream"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "dota2-senate",
+                          "title": "Dota2 Senate",
+                          "questionFrontendId": "649",
+                          "paidOnly": false,
+                          "id": "649",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "string",
+                              "name": "String"
+                            },
+                            {
+                              "slug": "greedy",
+                              "name": "Greedy"
+                            },
+                            {
+                              "slug": "queue",
+                              "name": "Queue"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-31-tr16",
+                      "name": "Linked List",
+                      "premiumOnly": false,
+                      "questionNum": 4,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "delete-the-middle-node-of-a-linked-list",
+                          "title": "Delete the Middle Node of a Linked List",
+                          "questionFrontendId": "2095",
+                          "paidOnly": false,
+                          "id": "2216",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "linked-list",
+                              "name": "Linked List"
+                            },
+                            {
+                              "slug": "two-pointers",
+                              "name": "Two Pointers"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "odd-even-linked-list",
+                          "title": "Odd Even Linked List",
+                          "questionFrontendId": "328",
+                          "paidOnly": false,
+                          "id": "328",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "linked-list",
+                              "name": "Linked List"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "reverse-linked-list",
+                          "title": "Reverse Linked List",
+                          "questionFrontendId": "206",
+                          "paidOnly": false,
+                          "id": "206",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "linked-list",
+                              "name": "Linked List"
+                            },
+                            {
+                              "slug": "recursion",
+                              "name": "Recursion"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "maximum-twin-sum-of-a-linked-list",
+                          "title": "Maximum Twin Sum of a Linked List",
+                          "questionFrontendId": "2130",
+                          "paidOnly": false,
+                          "id": "2236",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "linked-list",
+                              "name": "Linked List"
+                            },
+                            {
+                              "slug": "two-pointers",
+                              "name": "Two Pointers"
+                            },
+                            {
+                              "slug": "stack",
+                              "name": "Stack"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-32-iuby",
+                      "name": "Binary Tree - DFS",
+                      "premiumOnly": false,
+                      "questionNum": 6,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "maximum-depth-of-binary-tree",
+                          "title": "Maximum Depth of Binary Tree",
+                          "questionFrontendId": "104",
+                          "paidOnly": false,
+                          "id": "104",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "tree",
+                              "name": "Tree"
+                            },
+                            {
+                              "slug": "depth-first-search",
+                              "name": "Depth-First Search"
+                            },
+                            {
+                              "slug": "breadth-first-search",
+                              "name": "Breadth-First Search"
+                            },
+                            {
+                              "slug": "binary-tree",
+                              "name": "Binary Tree"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "leaf-similar-trees",
+                          "title": "Leaf-Similar Trees",
+                          "questionFrontendId": "872",
+                          "paidOnly": false,
+                          "id": "904",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "tree",
+                              "name": "Tree"
+                            },
+                            {
+                              "slug": "depth-first-search",
+                              "name": "Depth-First Search"
+                            },
+                            {
+                              "slug": "binary-tree",
+                              "name": "Binary Tree"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "count-good-nodes-in-binary-tree",
+                          "title": "Count Good Nodes in Binary Tree",
+                          "questionFrontendId": "1448",
+                          "paidOnly": false,
+                          "id": "1544",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "tree",
+                              "name": "Tree"
+                            },
+                            {
+                              "slug": "depth-first-search",
+                              "name": "Depth-First Search"
+                            },
+                            {
+                              "slug": "breadth-first-search",
+                              "name": "Breadth-First Search"
+                            },
+                            {
+                              "slug": "binary-tree",
+                              "name": "Binary Tree"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "path-sum-iii",
+                          "title": "Path Sum III",
+                          "questionFrontendId": "437",
+                          "paidOnly": false,
+                          "id": "437",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "tree",
+                              "name": "Tree"
+                            },
+                            {
+                              "slug": "depth-first-search",
+                              "name": "Depth-First Search"
+                            },
+                            {
+                              "slug": "binary-tree",
+                              "name": "Binary Tree"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "longest-zigzag-path-in-a-binary-tree",
+                          "title": "Longest ZigZag Path in a Binary Tree",
+                          "questionFrontendId": "1372",
+                          "paidOnly": false,
+                          "id": "1474",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "dynamic-programming",
+                              "name": "Dynamic Programming"
+                            },
+                            {
+                              "slug": "tree",
+                              "name": "Tree"
+                            },
+                            {
+                              "slug": "depth-first-search",
+                              "name": "Depth-First Search"
+                            },
+                            {
+                              "slug": "binary-tree",
+                              "name": "Binary Tree"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "lowest-common-ancestor-of-a-binary-tree",
+                          "title": "Lowest Common Ancestor of a Binary Tree",
+                          "questionFrontendId": "236",
+                          "paidOnly": false,
+                          "id": "236",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "tree",
+                              "name": "Tree"
+                            },
+                            {
+                              "slug": "depth-first-search",
+                              "name": "Depth-First Search"
+                            },
+                            {
+                              "slug": "binary-tree",
+                              "name": "Binary Tree"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-33-ibku",
+                      "name": "Binary Tree - BFS",
+                      "premiumOnly": false,
+                      "questionNum": 2,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "binary-tree-right-side-view",
+                          "title": "Binary Tree Right Side View",
+                          "questionFrontendId": "199",
+                          "paidOnly": false,
+                          "id": "199",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "tree",
+                              "name": "Tree"
+                            },
+                            {
+                              "slug": "depth-first-search",
+                              "name": "Depth-First Search"
+                            },
+                            {
+                              "slug": "breadth-first-search",
+                              "name": "Breadth-First Search"
+                            },
+                            {
+                              "slug": "binary-tree",
+                              "name": "Binary Tree"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "maximum-level-sum-of-a-binary-tree",
+                          "title": "Maximum Level Sum of a Binary Tree",
+                          "questionFrontendId": "1161",
+                          "paidOnly": false,
+                          "id": "1116",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "tree",
+                              "name": "Tree"
+                            },
+                            {
+                              "slug": "depth-first-search",
+                              "name": "Depth-First Search"
+                            },
+                            {
+                              "slug": "breadth-first-search",
+                              "name": "Breadth-First Search"
+                            },
+                            {
+                              "slug": "binary-tree",
+                              "name": "Binary Tree"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-34-o6nm",
+                      "name": "Binary Search Tree",
+                      "premiumOnly": false,
+                      "questionNum": 2,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "search-in-a-binary-search-tree",
+                          "title": "Search in a Binary Search Tree",
+                          "questionFrontendId": "700",
+                          "paidOnly": false,
+                          "id": "783",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "tree",
+                              "name": "Tree"
+                            },
+                            {
+                              "slug": "binary-search-tree",
+                              "name": "Binary Search Tree"
+                            },
+                            {
+                              "slug": "binary-tree",
+                              "name": "Binary Tree"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "delete-node-in-a-bst",
+                          "title": "Delete Node in a BST",
+                          "questionFrontendId": "450",
+                          "paidOnly": false,
+                          "id": "450",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "tree",
+                              "name": "Tree"
+                            },
+                            {
+                              "slug": "binary-search-tree",
+                              "name": "Binary Search Tree"
+                            },
+                            {
+                              "slug": "binary-tree",
+                              "name": "Binary Tree"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-35-udu6",
+                      "name": "Graphs - DFS",
+                      "premiumOnly": false,
+                      "questionNum": 4,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "keys-and-rooms",
+                          "title": "Keys and Rooms",
+                          "questionFrontendId": "841",
+                          "paidOnly": false,
+                          "id": "871",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "depth-first-search",
+                              "name": "Depth-First Search"
+                            },
+                            {
+                              "slug": "breadth-first-search",
+                              "name": "Breadth-First Search"
+                            },
+                            {
+                              "slug": "graph",
+                              "name": "Graph"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "number-of-provinces",
+                          "title": "Number of Provinces",
+                          "questionFrontendId": "547",
+                          "paidOnly": false,
+                          "id": "547",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "depth-first-search",
+                              "name": "Depth-First Search"
+                            },
+                            {
+                              "slug": "breadth-first-search",
+                              "name": "Breadth-First Search"
+                            },
+                            {
+                              "slug": "union-find",
+                              "name": "Union Find"
+                            },
+                            {
+                              "slug": "graph",
+                              "name": "Graph"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "reorder-routes-to-make-all-paths-lead-to-the-city-zero",
+                          "title": "Reorder Routes to Make All Paths Lead to the City Zero",
+                          "questionFrontendId": "1466",
+                          "paidOnly": false,
+                          "id": "1576",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "depth-first-search",
+                              "name": "Depth-First Search"
+                            },
+                            {
+                              "slug": "breadth-first-search",
+                              "name": "Breadth-First Search"
+                            },
+                            {
+                              "slug": "graph",
+                              "name": "Graph"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "evaluate-division",
+                          "title": "Evaluate Division",
+                          "questionFrontendId": "399",
+                          "paidOnly": false,
+                          "id": "399",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "string",
+                              "name": "String"
+                            },
+                            {
+                              "slug": "depth-first-search",
+                              "name": "Depth-First Search"
+                            },
+                            {
+                              "slug": "breadth-first-search",
+                              "name": "Breadth-First Search"
+                            },
+                            {
+                              "slug": "union-find",
+                              "name": "Union Find"
+                            },
+                            {
+                              "slug": "graph",
+                              "name": "Graph"
+                            },
+                            {
+                              "slug": "shortest-path",
+                              "name": "Shortest Path"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-36-8hgd",
+                      "name": "Graphs - BFS",
+                      "premiumOnly": false,
+                      "questionNum": 2,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "nearest-exit-from-entrance-in-maze",
+                          "title": "Nearest Exit from Entrance in Maze",
+                          "questionFrontendId": "1926",
+                          "paidOnly": false,
+                          "id": "2038",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "breadth-first-search",
+                              "name": "Breadth-First Search"
+                            },
+                            {
+                              "slug": "matrix",
+                              "name": "Matrix"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "rotting-oranges",
+                          "title": "Rotting Oranges",
+                          "questionFrontendId": "994",
+                          "paidOnly": false,
+                          "id": "1036",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "breadth-first-search",
+                              "name": "Breadth-First Search"
+                            },
+                            {
+                              "slug": "matrix",
+                              "name": "Matrix"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-37-s8hv",
+                      "name": "Heap / Priority Queue",
+                      "premiumOnly": false,
+                      "questionNum": 4,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "kth-largest-element-in-an-array",
+                          "title": "Kth Largest Element in an Array",
+                          "questionFrontendId": "215",
+                          "paidOnly": false,
+                          "id": "215",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "divide-and-conquer",
+                              "name": "Divide and Conquer"
+                            },
+                            {
+                              "slug": "sorting",
+                              "name": "Sorting"
+                            },
+                            {
+                              "slug": "heap-priority-queue",
+                              "name": "Heap (Priority Queue)"
+                            },
+                            {
+                              "slug": "quickselect",
+                              "name": "Quickselect"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "smallest-number-in-infinite-set",
+                          "title": "Smallest Number in Infinite Set",
+                          "questionFrontendId": "2336",
+                          "paidOnly": false,
+                          "id": "2413",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "hash-table",
+                              "name": "Hash Table"
+                            },
+                            {
+                              "slug": "design",
+                              "name": "Design"
+                            },
+                            {
+                              "slug": "heap-priority-queue",
+                              "name": "Heap (Priority Queue)"
+                            },
+                            {
+                              "slug": "ordered-set",
+                              "name": "Ordered Set"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "maximum-subsequence-score",
+                          "title": "Maximum Subsequence Score",
+                          "questionFrontendId": "2542",
+                          "paidOnly": false,
+                          "id": "2636",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "greedy",
+                              "name": "Greedy"
+                            },
+                            {
+                              "slug": "sorting",
+                              "name": "Sorting"
+                            },
+                            {
+                              "slug": "heap-priority-queue",
+                              "name": "Heap (Priority Queue)"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "total-cost-to-hire-k-workers",
+                          "title": "Total Cost to Hire K Workers",
+                          "questionFrontendId": "2462",
+                          "paidOnly": false,
+                          "id": "2553",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "two-pointers",
+                              "name": "Two Pointers"
+                            },
+                            {
+                              "slug": "heap-priority-queue",
+                              "name": "Heap (Priority Queue)"
+                            },
+                            {
+                              "slug": "simulation",
+                              "name": "Simulation"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-38-mv3u",
+                      "name": "Binary Search",
+                      "premiumOnly": false,
+                      "questionNum": 4,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "guess-number-higher-or-lower",
+                          "title": "Guess Number Higher or Lower",
+                          "questionFrontendId": "374",
+                          "paidOnly": false,
+                          "id": "374",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "binary-search",
+                              "name": "Binary Search"
+                            },
+                            {
+                              "slug": "interactive",
+                              "name": "Interactive"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "successful-pairs-of-spells-and-potions",
+                          "title": "Successful Pairs of Spells and Potions",
+                          "questionFrontendId": "2300",
+                          "paidOnly": false,
+                          "id": "2392",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "two-pointers",
+                              "name": "Two Pointers"
+                            },
+                            {
+                              "slug": "binary-search",
+                              "name": "Binary Search"
+                            },
+                            {
+                              "slug": "sorting",
+                              "name": "Sorting"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "find-peak-element",
+                          "title": "Find Peak Element",
+                          "questionFrontendId": "162",
+                          "paidOnly": false,
+                          "id": "162",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "binary-search",
+                              "name": "Binary Search"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "koko-eating-bananas",
+                          "title": "Koko Eating Bananas",
+                          "questionFrontendId": "875",
+                          "paidOnly": false,
+                          "id": "907",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "binary-search",
+                              "name": "Binary Search"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-39-17n8",
+                      "name": "Backtracking",
+                      "premiumOnly": false,
+                      "questionNum": 2,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "letter-combinations-of-a-phone-number",
+                          "title": "Letter Combinations of a Phone Number",
+                          "questionFrontendId": "17",
+                          "paidOnly": false,
+                          "id": "17",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "hash-table",
+                              "name": "Hash Table"
+                            },
+                            {
+                              "slug": "string",
+                              "name": "String"
+                            },
+                            {
+                              "slug": "backtracking",
+                              "name": "Backtracking"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "combination-sum-iii",
+                          "title": "Combination Sum III",
+                          "questionFrontendId": "216",
+                          "paidOnly": false,
+                          "id": "216",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "backtracking",
+                              "name": "Backtracking"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-40-yz6i",
+                      "name": "DP - 1D",
+                      "premiumOnly": false,
+                      "questionNum": 4,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "n-th-tribonacci-number",
+                          "title": "N-th Tribonacci Number",
+                          "questionFrontendId": "1137",
+                          "paidOnly": false,
+                          "id": "1236",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "math",
+                              "name": "Math"
+                            },
+                            {
+                              "slug": "dynamic-programming",
+                              "name": "Dynamic Programming"
+                            },
+                            {
+                              "slug": "memoization",
+                              "name": "Memoization"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "min-cost-climbing-stairs",
+                          "title": "Min Cost Climbing Stairs",
+                          "questionFrontendId": "746",
+                          "paidOnly": false,
+                          "id": "747",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "dynamic-programming",
+                              "name": "Dynamic Programming"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "house-robber",
+                          "title": "House Robber",
+                          "questionFrontendId": "198",
+                          "paidOnly": false,
+                          "id": "198",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "dynamic-programming",
+                              "name": "Dynamic Programming"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "domino-and-tromino-tiling",
+                          "title": "Domino and Tromino Tiling",
+                          "questionFrontendId": "790",
+                          "paidOnly": false,
+                          "id": "806",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "dynamic-programming",
+                              "name": "Dynamic Programming"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-41-yome",
+                      "name": "DP - Multidimensional",
+                      "premiumOnly": false,
+                      "questionNum": 4,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "unique-paths",
+                          "title": "Unique Paths",
+                          "questionFrontendId": "62",
+                          "paidOnly": false,
+                          "id": "62",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "math",
+                              "name": "Math"
+                            },
+                            {
+                              "slug": "dynamic-programming",
+                              "name": "Dynamic Programming"
+                            },
+                            {
+                              "slug": "combinatorics",
+                              "name": "Combinatorics"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "longest-common-subsequence",
+                          "title": "Longest Common Subsequence",
+                          "questionFrontendId": "1143",
+                          "paidOnly": false,
+                          "id": "1250",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "string",
+                              "name": "String"
+                            },
+                            {
+                              "slug": "dynamic-programming",
+                              "name": "Dynamic Programming"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "best-time-to-buy-and-sell-stock-with-transaction-fee",
+                          "title": "Best Time to Buy and Sell Stock with Transaction Fee",
+                          "questionFrontendId": "714",
+                          "paidOnly": false,
+                          "id": "714",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "dynamic-programming",
+                              "name": "Dynamic Programming"
+                            },
+                            {
+                              "slug": "greedy",
+                              "name": "Greedy"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "edit-distance",
+                          "title": "Edit Distance",
+                          "questionFrontendId": "72",
+                          "paidOnly": false,
+                          "id": "72",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "string",
+                              "name": "String"
+                            },
+                            {
+                              "slug": "dynamic-programming",
+                              "name": "Dynamic Programming"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-42-0tkm",
+                      "name": "Bit Manipulation",
+                      "premiumOnly": false,
+                      "questionNum": 3,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "counting-bits",
+                          "title": "Counting Bits",
+                          "questionFrontendId": "338",
+                          "paidOnly": false,
+                          "id": "338",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "dynamic-programming",
+                              "name": "Dynamic Programming"
+                            },
+                            {
+                              "slug": "bit-manipulation",
+                              "name": "Bit Manipulation"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "single-number",
+                          "title": "Single Number",
+                          "questionFrontendId": "136",
+                          "paidOnly": false,
+                          "id": "136",
+                          "difficulty": "EASY",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "bit-manipulation",
+                              "name": "Bit Manipulation"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "minimum-flips-to-make-a-or-b-equal-to-c",
+                          "title": "Minimum Flips to Make a OR b Equal to c",
+                          "questionFrontendId": "1318",
+                          "paidOnly": false,
+                          "id": "1441",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "bit-manipulation",
+                              "name": "Bit Manipulation"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-43-icuq",
+                      "name": "Trie",
+                      "premiumOnly": false,
+                      "questionNum": 2,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "implement-trie-prefix-tree",
+                          "title": "Implement Trie (Prefix Tree)",
+                          "questionFrontendId": "208",
+                          "paidOnly": false,
+                          "id": "208",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "hash-table",
+                              "name": "Hash Table"
+                            },
+                            {
+                              "slug": "string",
+                              "name": "String"
+                            },
+                            {
+                              "slug": "design",
+                              "name": "Design"
+                            },
+                            {
+                              "slug": "trie",
+                              "name": "Trie"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "search-suggestions-system",
+                          "title": "Search Suggestions System",
+                          "questionFrontendId": "1268",
+                          "paidOnly": false,
+                          "id": "1397",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "string",
+                              "name": "String"
+                            },
+                            {
+                              "slug": "binary-search",
+                              "name": "Binary Search"
+                            },
+                            {
+                              "slug": "trie",
+                              "name": "Trie"
+                            },
+                            {
+                              "slug": "sorting",
+                              "name": "Sorting"
+                            },
+                            {
+                              "slug": "heap-priority-queue",
+                              "name": "Heap (Priority Queue)"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-44-3wd2",
+                      "name": "Intervals",
+                      "premiumOnly": false,
+                      "questionNum": 2,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "non-overlapping-intervals",
+                          "title": "Non-overlapping Intervals",
+                          "questionFrontendId": "435",
+                          "paidOnly": false,
+                          "id": "435",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "dynamic-programming",
+                              "name": "Dynamic Programming"
+                            },
+                            {
+                              "slug": "greedy",
+                              "name": "Greedy"
+                            },
+                            {
+                              "slug": "sorting",
+                              "name": "Sorting"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "minimum-number-of-arrows-to-burst-balloons",
+                          "title": "Minimum Number of Arrows to Burst Balloons",
+                          "questionFrontendId": "452",
+                          "paidOnly": false,
+                          "id": "452",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "greedy",
+                              "name": "Greedy"
+                            },
+                            {
+                              "slug": "sorting",
+                              "name": "Sorting"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "leetcode-75-45-ztok",
+                      "name": "Monotonic Stack",
+                      "premiumOnly": false,
+                      "questionNum": 2,
+                      "questions": [
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "daily-temperatures",
+                          "title": "Daily Temperatures",
+                          "questionFrontendId": "739",
+                          "paidOnly": false,
+                          "id": "739",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "array",
+                              "name": "Array"
+                            },
+                            {
+                              "slug": "stack",
+                              "name": "Stack"
+                            },
+                            {
+                              "slug": "monotonic-stack",
+                              "name": "Monotonic Stack"
+                            }
+                          ],
+                          "solutionInfo": null
+                        },
+                        {
+                          "translatedTitle": null,
+                          "titleSlug": "online-stock-span",
+                          "title": "Online Stock Span",
+                          "questionFrontendId": "901",
+                          "paidOnly": false,
+                          "id": "937",
+                          "difficulty": "MEDIUM",
+                          "hasOfficialSolution": true,
+                          "topicTags": [
+                            {
+                              "slug": "stack",
+                              "name": "Stack"
+                            },
+                            {
+                              "slug": "design",
+                              "name": "Design"
+                            },
+                            {
+                              "slug": "monotonic-stack",
+                              "name": "Monotonic Stack"
+                            },
+                            {
+                              "slug": "data-stream",
+                              "name": "Data Stream"
+                            }
+                          ],
+                          "solutionInfo": null
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "dataUpdateCount": 1,
+              "dataUpdatedAt": 1740543079315,
+              "error": null,
+              "errorUpdateCount": 0,
+              "errorUpdatedAt": 0,
+              "fetchFailureCount": 0,
+              "fetchFailureReason": null,
+              "fetchMeta": null,
+              "isInvalidated": false,
+              "status": "success",
+              "fetchStatus": "idle"
+            },
+            "queryKey": [
+              "studyPlanDetail",
+              {
+                "slug": "leetcode-75"
+              }
+            ],
+            "queryHash": "[\"studyPlanDetail\",{\"slug\":\"leetcode-75\"}]"
+          }
+        ]
+      },
+      "_nextI18Next": {
+        "initialI18nStore": {
+          "en": {
+            "common": {
+              "404": {
+                "title": "Page Not Found - LeetCode",
+                "pageNotFound": "Page Not Found",
+                "message": "Sorry, but we can't find the page you are looking for..."
+              },
+              "meta": {
+                "title": "",
+                "description": "",
+                "keywords": ""
+              },
+              "ok": "OK",
+              "cancel": "Cancel",
+              "confirm": "Confirm",
+              "update": "Update",
+              "submit": "Submit",
+              "save": "Save",
+              "netFailed": "Debugger failed to connect",
+              "header": {
+                "logo": {
+                  "url": "",
+                  "description": ""
+                },
+                "title": {
+                  "problemset-all": ""
+                },
+                "action": {
+                  "login": {
+                    "text": "",
+                    "url": ""
+                  }
+                }
+              },
+              "conjunctions": {
+                "and": "and",
+                "or": "or"
+              },
+              "pages": {
+                "leetcode": "LeetCode",
+                "explore": "Explore",
+                "problems": "Problems",
+                "interview": {
+                  "interview": "Interview",
+                  "onlineInterview": "Online Interview",
+                  "assessment": "Assessment"
+                },
+                "contest": "Contest",
+                "discuss": "Discuss",
+                "store": {
+                  "store": "Store",
+                  "redeem": "Redeem",
+                  "premium": "Premium",
+                  "shop": "Micro-shop"
+                },
+                "admin": {
+                  "admin": "Admin",
+                  "library": "Library",
+                  "review": "Review",
+                  "operations": "User Management",
+                  "scores": "Points",
+                  "contribute": "Contribution",
+                  "backend": "Administration",
+                  "internalContest": "Internal Contest Dashboard",
+                  "contestDashboard": "Contest Dashboard",
+                  "contestAdmin": "Contest Cheating Dashboard",
+                  "emailBatch": "Email Batch",
+                  "dangerZone": "Danger Zone",
+                  "dbTestcase": "DB Testcase Converter",
+                  "tagManagement": "Tag Management",
+                  "questionFeedback": "Question Feedback"
+                },
+                "mobileApp": "Mobile App",
+                "playground": "Playground",
+                "signIn": "Sign in",
+                "register": "Register",
+                "signOut": "Sign Out"
+              },
+              "userMenu": {
+                "renew": "Renew",
+                "getPremium": "Access all features with our Premium subscription!",
+                "orders": "Orders",
+                "tryNewFeatures": "Try New Features",
+                "translateQuestions": "Display problems in Chinese",
+                "unmockUser": "Unmock User",
+                "revertToOldVersion": "Classic Mode",
+                "categories": {
+                  "myList": "My Lists",
+                  "notebook": "Notebook",
+                  "submissions": "Submissions",
+                  "session": "Session",
+                  "points": "Points",
+                  "progress": "Progress"
+                },
+                "appearance": "Appearance",
+                "appearanceContent": {
+                  "auto": "System Default",
+                  "light": "Light",
+                  "dark": "Dark"
+                },
+                "account": "Settings"
+              },
+              "streakCounter": {
+                "finished": "Well done! Come back for tomorrow's challenge!",
+                "unfinished": "Solve today's Daily Challenge to refresh your streak!",
+                "buyTimeTravelTicket": "Buy Time Travel Ticket",
+                "missedOneDayThisMonth": "You missed 1 day this month. ",
+                "missedDaysThisMonth": "You missed {{count}} days this month. "
+              },
+              "playground": {
+                "playground": "Playground",
+                "myPlaygrounds": "My Playgrounds",
+                "remainingPlaygrounds": "Remaining",
+                "renew": "Renew",
+                "templates": {
+                  "consoleApplication": "Console Application",
+                  "empty": "New Playground",
+                  "frontend": "Frontend",
+                  "machineLearning": "Machine Learning"
+                }
+              },
+              "links": {
+                "premium": "/subscribe/",
+                "discuss": "/discuss/",
+                "assessment": "/assessment/",
+                "shop": "https://detail.youzan.com/show/goods/newest?alias=271n43vr9hen7",
+                "onlineInterview": "https://interview.leetcode.com/interview/",
+                "profileArticles": "/submissions/",
+                "orders": "/store/orders/",
+                "tryNewFeatures": "/new/",
+                "explore": "/explore/",
+                "admin": {
+                  "scores": "/points/admin",
+                  "operations": "/user_management"
+                },
+                "playground": "/playground",
+                "account": "/profile"
+              },
+              "pagination": {
+                "perpage": "/ page"
+              },
+              "expand": "Expand",
+              "collapse": "Collapse",
+              "difficulty": {
+                "easy": "Easy",
+                "medium": "Medium",
+                "hard": "Hard"
+              },
+              "easterEgg": {
+                "rewardMessage": "Congratulations! You just found 10 LeetCoins. Happy LeetCoding!"
+              },
+              "markdown": {
+                "heading": "heading",
+                "quote": "Quote"
+              },
+              "mentions": {
+                "users": "Users",
+                "problems": "Problems"
+              },
+              "confirmModal": {
+                "title": "Are you sure?",
+                "confirmBtn": "Confirm",
+                "cancelBtn": "Cancel"
+              },
+              "saving": "Saving...",
+              "saved": "Saved",
+              "autoSaved": "Save automatically",
+              "loginRequired": "Sign in required",
+              "verifiedRequired": "You need to verify your email",
+              "phoneVerifiedRequired": "Your need to verify your phone",
+              "maybeVerifiedRequired": "You need to verify your email",
+              "dailyCheckIn": "+1 Daily Check-in",
+              "copy": "Copy",
+              "copyToEditor": "Copy To Editor",
+              "copied": "Copied!",
+              "copyLink": "Copy Link",
+              "viewMore": "View more",
+              "viewLess": "View less",
+              "code": "Code",
+              "survey": {
+                "veryDissatisfied": "Very Dissatisfied",
+                "verySatisfied": "Very Satisfied",
+                "next": "Next",
+                "continue": "Continue",
+                "submit": "Submit",
+                "questionNo": "Question {{current}} of {{total}}",
+                "thanksMsg": "🎉 Thanks for your feedback!"
+              },
+              "qdNav": {
+                "backTitle": "Problem List",
+                "expandPanel": "Expand Panel",
+                "preQuestion": "Prev Question",
+                "nextQuestion": "Next Question",
+                "pickOne": "Pick one",
+                "openInNewTab": "Open in New Tab"
+              },
+              "premiumModal": {
+                "learnMore": "Learn more",
+                "subscribe": "Subscribe"
+              },
+              "truncatedContent": {
+                "viewAll": "View all",
+                "viewLess": "View less",
+                "openRaw": "Open Raw",
+                "showMore": "Show more",
+                "showLess": "Show less"
+              },
+              "safariNotUse": "The current version of Safari is too low. For better experience, upgrade to the latest version",
+              "account": {
+                "emailVerifyModal": {
+                  "title": "Verify your account",
+                  "description": "Please verify your email address in order to use your account.",
+                  "verify": "Verify",
+                  "cancel": "Cancel"
+                }
+              },
+              "medal": {
+                "metadataTitle": "Badge - LeetCode",
+                "congratulation": "Congratulations",
+                "genPoster": "Generate Image",
+                "genPostering": "Generating",
+                "saveImgMobile": "Long press to save the image",
+                "saveImgPc": "Right-click to save the image",
+                "medalEmpty": "Sorry, there are no medals to grab right now."
+              },
+              "recordEventType": {
+                "start": "Start",
+                "switchQuestion": "Switch Question",
+                "switchLang": "Switch Language",
+                "pageVisible": "Page Switch",
+                "interpretCode": "Run Code",
+                "submitCode": "Submit Code",
+                "end": "End",
+                "input": "Input",
+                "undo": "Undo",
+                "redo": "Redo",
+                "paste": "External Paste",
+                "changeCursor": "Change Cursor",
+                "debug": "Debug",
+                "debugEnd": "Debug End"
+              },
+              "codeReplay": {
+                "title": "Code Replay",
+                "redirectContent": "This account belongs to LeetCode China. Would you like to view it on leetcode.cn?",
+                "doNotShowAgain": "Don't show again",
+                "eventHistory": "Event History",
+                "skipInactive": "Skip inactive",
+                "noCodeResults": "No code results",
+                "size": "Size",
+                "chars": "chars",
+                "leaveContestPageN": "Leave Contest Page",
+                "returnContestPage": "Return to Contest Page"
+              },
+              "verified": "Verified"
+            },
+            "new-study-plan": {
+              "detail": {
+                "metadata": {
+                  "title": "{{plan}} - Study Plan - LeetCode",
+                  "description": "Level up your coding skills and quickly land a job. This is the best place to expand your knowledge and get prepared for your next interview.",
+                  "notFound": "Not Found"
+                },
+                "weekTextAbbr": {
+                  "sun": "SUN",
+                  "mon": "MON",
+                  "tue": "TUE",
+                  "wed": "WED",
+                  "thu": "THU",
+                  "fri": "FRI",
+                  "sat": "SAT"
+                },
+                "weekText": {
+                  "sun": "Sunday",
+                  "mon": "Monday",
+                  "tue": "Tuesday",
+                  "wed": "Wednesday",
+                  "thu": "Thursday",
+                  "fri": "Friday",
+                  "sat": "Saturday"
+                },
+                "myPlan": "My Plan",
+                "problemLeft": "problem left",
+                "problemsLeft": "problems left",
+                "notification": "Notification",
+                "setUpSp": "Set up a study plan",
+                "solvedText": "Solved",
+                "problem": "problem",
+                "problems": "problems",
+                "learnMore": "Learn More",
+                "you": "You",
+                "weeklyRanking": "Weekly Ranking",
+                "weeklyRankingToolTip": "The ranking is based on the number of solved problems in this problem list this week, and the leaderboard is updated hourly (no ranking is calculated if no problems are solved this week).",
+                "solvePrev": "I commit to solve",
+                "solveNext": "problems on every",
+                "startTitle": "New Study Plan",
+                "confirmStartText": "Once you save it, you cannot make any modifications. Start now?",
+                "quitTypeTipPrev": "Quit the study plan by typing ",
+                "quitTypeTipNext": " below.",
+                "subscribeToUnlock": "Subscribe to unlock",
+                "subscribeToUnlockContent": "Thanks for using LeetCode! To view this study plan you must subscribe to premium.",
+                "start": "Start",
+                "share": "Share",
+                "backToExplore": "Back to Plan List",
+                "goCurrentPage": "retry this study plan",
+                "premiumTip": "Premium Study Plan",
+                "copyLink": "Copy Link",
+                "copiedSuccess": "Copied to clipboard",
+                "more": "More",
+                "quit": "Quit",
+                "back": "Back",
+                "quitTitle": "Are you sure?",
+                "quitContent": "When you quit your study plan, all problem solved statues will be reset and you can't restore progress. Are you sure you want to quit?",
+                "showTags": "Show tags",
+                "summary": "Summary",
+                "showMore": "Show More",
+                "showLess": "Show Less",
+                "award": "Award",
+                "awardCongratulation": "Congratulations! You have already earned this badge.",
+                "related": "Related",
+                "viewMore": "View More",
+                "todo": "Todo",
+                "attempted": "Attempted",
+                "solved": "Solved",
+                "markAsSolved": "Mark As Solved",
+                "markAsSolvedTip": "You have already solved this question in other place, do you want to “Mark as solved” here?",
+                "difficulty": "Difficulty",
+                "congratulation": "🎉 Congratulations!",
+                "solvedAllProblemsText": "You just solved all the problems from {{title}}!",
+                "checkBadge": "Check out the badge on your",
+                "profilePage": "Profile page",
+                "wearGlory": "and wear the glory!",
+                "checkMyStudyPlan": "Check My Study Plan",
+                "joinSuccessfully": "Join Successfully",
+                "quitSuccessfully": "Quit Successfully",
+                "setSuccessfully": "Set Successfully",
+                "errorTip": "Something wrong, please try again.",
+                "quitTip": "When you quit your study plan, all problem solved statues will be reset and you can't restore progress.",
+                "pastSolved": "Past Solved",
+                "solution": "Solution",
+                "points": "pt.",
+                "ranking": "Ranking"
+              },
+              "list": {
+                "metadata": {
+                  "title": "Study Plan - LeetCode",
+                  "desc": "Start a study plan that's tailored to your needs to maximize your learning potential. Track your progress and make consistent growth!"
+                },
+                "title": "Study Plan",
+                "ongoing": "Ongoing",
+                "myPlan": "My Study Plan",
+                "featured": "Featured",
+                "showMore": "Show More",
+                "revertOldPlan": "Revert to the old study plan",
+                "revertOldPlanTipTitle": "🌟 Revert to the old version",
+                "revertOldPlanTipDesc": "You can click this button to revert to the old study plan",
+                "cancel": "Cancel",
+                "iSee": "I see"
+              },
+              "myStudyPlan": {
+                "metadata": {
+                  "title": "LeetCode - The World's Leading Online Programming Learning Platform",
+                  "desc": "Level up your coding skills and quickly land a job. This is the best place to expand your knowledge and get prepared for your next interview."
+                },
+                "title": "My Study Plan",
+                "ongoing": "Ongoing",
+                "history": "History",
+                "noOngoingPlan": "You don’t have the ongoing plan",
+                "noHistoryPlan": "You don’t have the history plan"
+              },
+              "common": {
+                "studyPlan": "Study Plan",
+                "tryNow": "Try it now!",
+                "noTanks": "No, thanks",
+                "newPlan": "✨ Brand New Study Plan!",
+                "newPlanDesc": "Join a new study plan to maximize your learning potential. Track your progress and focus on the daily questions to make consistent growth",
+                "seeAll": "See all",
+                "totalProgress": "Total Progress",
+                "totalScore": "Total Score",
+                "progress": "Progress",
+                "completed": "Completed",
+                "giveUp": "Give up",
+                "ongoing": "Ongoing",
+                "ongoingStudyPlan": "Ongoing Study Plan",
+                "later": "Later",
+                "joinInQDTitle": "Start this study plan?",
+                "joinInQD": "Join the study plan to maximize your learning potential. Track your progress and focus on the daily questions to make consistent growth",
+                "doNotRemind": "Do not remind me today",
+                "exploreButton": "Explore Study Plan",
+                "notFoundText": "Sorry, this page could not be found, please check your spelling or explore a new study plan"
+              },
+              "survey": {
+                "submit": "Submit"
+              },
+              "satisfactionSurvey": {
+                "submitBtnText": "Get LeetCoins"
+              }
+            },
+            "progress-calendar": {
+              "dailyChallenge": "Daily challenge",
+              "thisMonth": "This month",
+              "fill": "Fill",
+              "redeem": "Redeem",
+              "rules": "Rules",
+              "rule": "Rule",
+              "timeTravelTicket": "Time Travel Ticket",
+              "markRules": "Challenge Rules",
+              "remarkRules": "Make-up Rules",
+              "guideline": "Disclaimer",
+              "markRuleOptions": {
+                "option1": {
+                  "title": "Find the daily challenge",
+                  "desc": "At 00:00 UTC, the problem will update at the top of the problem list. You have 24 hours to solve the problem."
+                },
+                "option2": {
+                  "title": "Submit your code",
+                  "desc": "Earn 10 LeetCoins after an Accepted submission. A submission must be made again even if you have previously submitted an accepted code."
+                },
+                "option3": {
+                  "title": "Win a badge",
+                  "desc": "After completing the entire LeetCoding Challenge for the month, earn additional LeetCoins and that month’s badge."
+                }
+              },
+              "remarkRuleOptions": {
+                "option1": {
+                  "title": "Redeem TTT",
+                  "desc": "Click on Redeem or visit LeetCode Store to redeem time travel ticket. Max: 3 tickets/ month."
+                },
+                "option2": {
+                  "title": "Find the missed problem",
+                  "desc": "Click the date on calendar to submit code. Tickets are valid for all problems needed to be made up."
+                },
+                "option3": {
+                  "title": "Make up the problem",
+                  "desc": "Submit an accepted code and confirm ticket usage. You can still earn the badge after using a ticket."
+                }
+              },
+              "markGuideline": {
+                "option1": "10 LeetCoins are rewarded immediately after accepted submission.",
+                "option2": "For additional LeetCoins, please refer to \u003ca href='https://leetcode.com/discuss/general-discussion/655704/leetcoding-challenge-and-important-updates-in-october/' style='font-weight: 600;'\u003ethis\u003c/a\u003e discuss post.",
+                "option3": "Monthly LeetCoding Challenge Badge will be shown on the last day of the month after accepted submission.",
+                "option4": "Users who completed all Daily LeetCoding Challenge non-premium problems for the month (with or without using Time Travel Tickets) will win a badge.",
+                "option5": "With the Premium membership, you can submit an additional question each week. Once your submission is approved, you will receive 35 points."
+              },
+              "remarkGuideline": {
+                "option1": "Tickets make up any invalid or late submission for all problems.",
+                "option2": "Tickets are only valid through the end of the month in which they are redeemed.",
+                "option3": "The redeem cycle ends at 23:00 on the last day of the month. Both times are based on UTC.",
+                "option4": "After using time travel ticket to complete a problem, you can earn the 10 LeetCoins for completing the problem. However, you’ll not be qualified to earn additional LeetCoins for completing the entire challenge."
+              },
+              "rightText": "LeetCode reserves the right, in our sole discretion, to disqualify any entries."
+            },
+            "problemlist": {
+              "metadata": {
+                "defaultTitle": "Problem List - LeetCode",
+                "title": "{{title}} - LeetCode"
+              },
+              "tags": "Tags",
+              "todo": "Todo",
+              "attempted": "Attempted",
+              "solved": "Solved",
+              "move": "Move",
+              "removeFromList": "Remove from List",
+              "addToList": "Add to List",
+              "moveToTop": "Move to Top",
+              "moveToBottom": "Move to Bottom",
+              "nullList": "Oops! This list is no longer available.",
+              "privateList": "This is a private list",
+              "noQuestions": "No questions in this list yet",
+              "noSearchResult": "No search result",
+              "goToProblemSet": "View all questions",
+              "difficulty": {
+                "easy": "Easy",
+                "medium": "Med.",
+                "hard": "Hard"
+              },
+              "acceptance": "Acceptance",
+              "nav-panel": {
+                "title": "My Lists",
+                "fold": "Fold",
+                "unfold": "Unfold",
+                "createdByMe": "Created by me",
+                "savedByMe": "Saved by me",
+                "public": "Public",
+                "private": "Private",
+                "remove": "Remove",
+                "listInvalid": "Invalid List",
+                "newList": "New List",
+                "newSmartList": "New Smart List...",
+                "smartList": "Smart List",
+                "studyPlan": "Study Plan",
+                "oldLibrary": "Library",
+                "library": "Library",
+                "myList": "My Lists",
+                "oldMyList": "Created by me",
+                "mySaved": "Saved by me"
+              },
+              "description": {
+                "cover": {
+                  "editCover": "Edit Cover",
+                  "emojis": "Emojis",
+                  "image": "Image",
+                  "random": "Random",
+                  "background": "Background",
+                  "chooseBackground": "Choose a background",
+                  "Recommend": "Recommend",
+                  "Smileys \u0026 Emotion": "Smileys \u0026 Emotion",
+                  "People \u0026 Body": "People \u0026 Body",
+                  "Animals \u0026 Nature": "Animals \u0026 Nature",
+                  "Food \u0026 Drink": "Food \u0026 Drink",
+                  "Activities": "Activities",
+                  "Travel \u0026 Places": "Travel \u0026 Places",
+                  "Objects": "Objects",
+                  "Symbols": "Symbols",
+                  "Flags": "Flags",
+                  "uploadImage": "Upload Image",
+                  "uploadRecommendedSize": "Recommended size Is 200 x 200 pixels",
+                  "uploadSizeLimit": "The maximum size per file is 5 MB.",
+                  "cancel": "Cancel",
+                  "save": "Save"
+                },
+                "operations": {
+                  "updated": "Updated: ",
+                  "noQuestions": "No questions in this list yet",
+                  "questions": "questions",
+                  "public": "Public",
+                  "makePublic": "Make Public",
+                  "private": "Private",
+                  "makePrivate": "Make Private",
+                  "publicToast": "List is now public",
+                  "privateToast": "List is now private",
+                  "practice": "Practice",
+                  "random": "Random",
+                  "listSave": "Save",
+                  "listSaved": "Saved",
+                  "listSavedByCount": "Saved",
+                  "listSavedToast": "Saved!",
+                  "listUnsavedToast": "Removed!",
+                  "share": "Share",
+                  "fork": "Fork",
+                  "forkToast": "List forked!",
+                  "more": "More",
+                  "delete": "Delete",
+                  "deleteList": "Delete list",
+                  "deleteAlert": "Are you sure you want to delete this list? This action cannot be undone.",
+                  "cancel": "Cancel",
+                  "create": "Create",
+                  "created": "created",
+                  "addQuestions": "Add Questions",
+                  "addToList": "Add to List",
+                  "hasSelected": "{{count}} Selected",
+                  "genSmartList": "Generate Smart List",
+                  "createNewList": "Create New List",
+                  "updateRuleQuestionTip": "Including {{count}} question and updating by conditions.",
+                  "updateRuleQuestionsTip": "Including {{count}} questions and updating by conditions.",
+                  "editRule": "Edit Rule",
+                  "addRules": "Add Rules",
+                  "editRuleDesc": "Customize your problemset with multiple rules like difficulty and topics.",
+                  "setCondition": "Condition Setting",
+                  "acceptDelete": "Delete",
+                  "deleteToast": "List deleted!",
+                  "edit": "Edit",
+                  "editListInfo": "Edit list info",
+                  "title": "Title",
+                  "titlePlaceholder": "Enter a list name",
+                  "description": "Description",
+                  "descriptionPlaceholder": "Describe your list",
+                  "save": "Save",
+                  "infoSavedToast": "Changes saved!",
+                  "clickToReadMore": "Click to read more",
+                  "nonLoggedInDialog": {
+                    "saveTitle": "Save list",
+                    "saveContent": "Log in to save list.",
+                    "forkTitle": "Fork list",
+                    "forkContent": "Log in to fork list.",
+                    "notNow": "Not now",
+                    "logIn": "Log in"
+                  },
+                  "confirmPlusDialogTitle": "Upgrade to Premium to Edit",
+                  "confirmPlusDialogContent1": "This smart list contains premium-only filters. Please upgrade to premium to use them.",
+                  "confirmPlusDialogContent2": "If you edit it without premium, the premium-only filters will be removed.",
+                  "confirmPlusEditRulesDialogBtn": "Edit Rules",
+                  "confirmPlusDialogBtn": "Subscribe"
+                },
+                "progress": {
+                  "progress": "Progress",
+                  "resetProgress": "Reset progress",
+                  "resetAlert": "Resetting progress will move all questions back to incomplete. This action cannot be undone.",
+                  "cancel": "Cancel",
+                  "reset": "Reset",
+                  "resetToast": "Progress Reset!",
+                  "easy": "Easy",
+                  "medium": "Med.",
+                  "hard": "Hard",
+                  "solved": "Solved",
+                  "acceptance": "Acceptance",
+                  "beats": "Beats",
+                  "attempting": "Attempting",
+                  "checkReset": "Clear codes saved in code editor"
+                }
+              },
+              "company": {
+                "nullList": "Oops! This company is no longer available.",
+                "subscribeText1": "Unlock more popular interview questions with",
+                "subscribeText2": "LeetCode Premium to enhance interview prep!",
+                "subscribe": "Subscribe",
+                "learnMore": "Learn More",
+                "freeQuestion": "1 free interview question",
+                "claim": "Claim",
+                "claiming": "Claiming for you...",
+                "saved": "Saved",
+                "savedByCount": "Saved",
+                "updated": "Updated: ",
+                "description": "Description",
+                "filter": "Filter",
+                "status": "Status",
+                "todo": "Todo",
+                "attempted": "Attempted",
+                "solved": "Solved",
+                "difficulty": "Difficulty",
+                "easy": "Easy",
+                "medium": "Medium",
+                "hard": "Hard",
+                "role": "Role",
+                "rolePlaceholder": "Select role",
+                "reset": "Reset",
+                "tags": "Tags",
+                "showTags": "Show tags",
+                "frequency": "Frequency",
+                "discuss": "Discuss",
+                "chanceUsedUp": "Chance used up. Subscribe to Premium for more. ",
+                "subscribeNow": "Subscribe Now",
+                "claimSignIn": "Sign in to claim 1 free interview question. ",
+                "signIn": "Sign in",
+                "clickToReadMore": "Click for details",
+                "interviewTime": "Questions asked in",
+                "interviewTimeTip": "Progress is associated with the timeframe you chose.",
+                "frequencyTip": "Sort by frequency from high to low.",
+                "ok": "OK",
+                "subscribeFrequency": "Subscribe to unlock frequency"
+              },
+              "points": "pt.",
+              "filter": {
+                "difficulty": "Difficulty",
+                "status": "Status",
+                "list": "Lists",
+                "tag": "Tags",
+                "tagSearch": "Filter topics",
+                "expand": "Expand",
+                "collapse": "Collapse",
+                "reset": "Reset",
+                "searchPlaceholder": "Search questions",
+                "noResult": "No result",
+                "search": "search",
+                "filter": "Filter",
+                "filtered": "Filtered",
+                "showSaveAsSmartListBtn": "Save as Smart List",
+                "match": "Match",
+                "matchTitle": "of the following filters:",
+                "is": "is",
+                "not": "is not",
+                "range": "Range",
+                "past": "Past",
+                "all": "All",
+                "any": "Any",
+                "days": "Days",
+                "including": "Premium Content",
+                "excluding": "Non-Premium Content",
+                "filterName": {
+                  "frequency": "Frequency",
+                  "companies": "Companies",
+                  "position": "Position",
+                  "status": "Status",
+                  "difficulty": "Difficulty",
+                  "topics": "Topics",
+                  "lang": "Language",
+                  "acceptance": "Acceptance",
+                  "lastSubmit": "Last Submit",
+                  "published": "Published",
+                  "premium": "Premium Cont."
+                },
+                "filterNameAbbr": {
+                  "frequency": "Frequency",
+                  "companies": "Companies",
+                  "position": "Position",
+                  "status": "Status",
+                  "difficulty": "Difficulty",
+                  "topics": "Topics",
+                  "lang": "Language",
+                  "acceptance": "Acceptance",
+                  "lastSubmit": "Last Submit",
+                  "published": "Published",
+                  "premium": "Premium Cont."
+                },
+                "premiumTooltip": {
+                  "frequency": "Subscribe to unlock frequency",
+                  "companies": "Subscribe to unlock companies",
+                  "position": "Subscribe to unlock position"
+                },
+                "sort": {
+                  "custom": "Custom",
+                  "frequency": "Frequency",
+                  "difficulty": "Difficulty",
+                  "ac_rate": "Acceptance",
+                  "frontend_id": "Question ID",
+                  "premiumOnlyTip": "Subscribe to unlock frequency",
+                  "tooltip": {
+                    "custom": "Sorted by custom",
+                    "frequency": "Sorted by frequency",
+                    "difficulty": "Sorted by difficulty",
+                    "ac_rate": "Sorted by Acceptance",
+                    "frontend_id": "Sorted by Title"
+                  }
+                },
+                "random": "Pick One",
+                "addQuestionsToListTip_one": "Add {{count}} question to list",
+                "addQuestionsToListTip_other": "Add {{count}} questions to list",
+                "backToTop": "Back to top",
+                "totalNum": "{{count}} Qs"
+              }
+            }
+          },
+          "zh": {
+            "common": {
+              "404": {
+                "title": "力扣",
+                "pageNotFound": "页面不存在",
+                "message": "抱歉！我们找不到您想访问的页面..."
+              },
+              "meta": {
+                "title": "",
+                "description": "",
+                "keywords": ""
+              },
+              "ok": "好",
+              "cancel": "取消",
+              "confirm": "确认",
+              "update": "更新",
+              "submit": "提交",
+              "save": "保存",
+              "netFailed": "网络错误",
+              "header": {
+                "logo": {
+                  "url": "",
+                  "description": ""
+                },
+                "title": {
+                  "problemset-all": ""
+                },
+                "action": {
+                  "login": {
+                    "text": "",
+                    "url": ""
+                  }
+                }
+              },
+              "conjunctions": {
+                "and": "and",
+                "or": "或"
+              },
+              "pages": {
+                "leetcode": "LeetCode",
+                "explore": "学习",
+                "problems": "题库",
+                "interview": {
+                  "interview": "求职",
+                  "onlineInterview": "在线面试",
+                  "assessment": "Assessment"
+                },
+                "contest": "竞赛",
+                "discuss": "讨论",
+                "store": {
+                  "store": "商店",
+                  "redeem": "力扣周边",
+                  "premium": "Plus 会员",
+                  "shop": "精品商城"
+                },
+                "admin": {
+                  "admin": "管理员",
+                  "library": "题库",
+                  "translation": "翻译",
+                  "operations": "运营管理",
+                  "scores": "点数",
+                  "contribute": "贡献",
+                  "backend": "后台管理",
+                  "twoStepVerification": "二步验证",
+                  "internalContest": "Internal Contest Dashboard",
+                  "contestAdmin": "Contest Cheating Dashboard",
+                  "dangerZone": "Danger Zone",
+                  "review": "Review",
+                  "contestDashboard": "Contest Dashboard"
+                },
+                "mobileApp": "下载 App",
+                "playground": "Playground",
+                "myPlayground": "我的 Playground",
+                "signIn": "登录",
+                "register": "注册",
+                "signOut": "退出"
+              },
+              "userMenu": {
+                "renew": "续订",
+                "getPremium": "升级 Plus 会员享专属特权",
+                "tryNewFeatures": "体验新功能",
+                "orders": "订单",
+                "resume": "个人资料",
+                "translateQuestions": "题目以中文展示",
+                "translateQuestionsEn": "题目以英文显示",
+                "enterprise": "企业招聘",
+                "revertToOldVersion": "经典模式",
+                "categories": {
+                  "myList": "收藏夹",
+                  "notebook": "笔记本",
+                  "submissions": "我的题解",
+                  "session": "进度管理",
+                  "points": "积分",
+                  "progress": "进展分析"
+                },
+                "unmockUser": "Unmock User",
+                "account": "账号设置",
+                "appearance": "外观",
+                "appearanceContent": {
+                  "auto": "跟随系统",
+                  "light": "浅色",
+                  "dark": "深色"
+                }
+              },
+              "streakCounter": {
+                "finished": "干的好！明天再来挑战！",
+                "unfinished": "解决今天的「每日 1 题」，刷新你的连胜记录！",
+                "buyTimeTravelTicket": "购买补签卡",
+                "missedOneDayThisMonth": "这个月你错过了 1 天.",
+                "missedDaysThisMonth": "这个月你错过了 {{count}} 天."
+              },
+              "playground": {
+                "playground": "Playground",
+                "remainingPlaygrounds": "数量",
+                "renew": "升级",
+                "myPlaygrounds": "我的 Playgrounds",
+                "templates": {
+                  "consoleApplication": "控制台程序",
+                  "empty": "空白 Playground",
+                  "frontend": "前端程序",
+                  "machineLearning": "机器学习"
+                }
+              },
+              "links": {
+                "admin": {
+                  "scores": "/library/scores",
+                  "translation": "/contribution/translation/question/admin/",
+                  "operations": "/management"
+                },
+                "premium": "/premium",
+                "discuss": "/circle",
+                "interview": "/company",
+                "shop": "https://detail.youzan.com/show/goods/newest?alias=271n43vr9hen7",
+                "onlineInterview": "https://leetcode.cn/interview",
+                "profileArticles": "/profile/articles",
+                "tryNewFeatures": "/new/",
+                "orders": "/order",
+                "explore": "/leetbook",
+                "resume": "/profile/info/",
+                "playground": "/playground",
+                "assessment": "/assessment/",
+                "account": "/profile/info"
+              },
+              "pagination": {
+                "perpage": " 条/页"
+              },
+              "expand": "展开",
+              "collapse": "收起",
+              "difficulty": {
+                "easy": "简单",
+                "medium": "中等",
+                "hard": "困难"
+              },
+              "data": {
+                "question": {
+                  "difficulty": {
+                    "easy": "简单",
+                    "medium": "中等",
+                    "hard": "困难"
+                  }
+                }
+              },
+              "markdown": {
+                "heading": "heading",
+                "quote": "Quote"
+              },
+              "mentions": { "users": "用户", "problems": "题目" },
+              "confirmModal": {
+                "title": "确定执行此操作?",
+                "confirmBtn": "确定",
+                "cancelBtn": "取消"
+              },
+              "saving": "保存中...",
+              "saved": "保存成功",
+              "autoSaved": "已自动保存",
+              "loginRequired": "您尚未登录",
+              "verifiedRequired": "请绑定手机号或者邮箱后继续操作",
+              "phoneVerifiedRequired": "请绑定手机号后继续操作",
+              "maybeVerifiedRequired": "请绑定手机号后继续操作",
+              "copy": "复制",
+              "copyToEditor": "复制到编辑器",
+              "copied": "已复制",
+              "copyLink": "复制链接",
+              "viewMore": "查看更多",
+              "viewLess": "收起",
+              "code": "代码",
+              "dailyCheckIn": "+1 每日登录",
+              "//maybeVerifiedRequired": "maybeVerifiedRequired means email in LCUS and phone in LCCN",
+              "easterEgg": {
+                "rewardMessage": "恭喜您获得了 10 积分，Happy LeetCoding!"
+              },
+              "survey": {
+                "veryDissatisfied": "非常不满意",
+                "verySatisfied": "非常满意",
+                "next": "下一题",
+                "continue": "继续",
+                "submit": "提交",
+                "questionNo": "问卷题目 {{current}}/{{total}}",
+                "thanksMsg": "🎉 感谢您的反馈!"
+              },
+              "qdNav": {
+                "backTitle": "题库",
+                "expandPanel": "展开面板",
+                "preQuestion": "上一题",
+                "nextQuestion": "下一题",
+                "pickOne": "随机一题",
+                "openInNewTab": "在新的标签页打开"
+              },
+              "premiumModal": {
+                "learnMore": "了解更多权益",
+                "subscribe": "升级 Plus 会员"
+              },
+              "truncatedContent": {
+                "viewAll": "查看全部",
+                "viewLess": "收起",
+                "openRaw": "打开源码",
+                "showMore": "显示更多",
+                "showLess": "显示更少"
+              },
+              "safariNotUse": "当前 Safari 版本过低，为了更好的使用体验，请升级到最新版本",
+              "medal": {
+                "metadataTitle": "勋章 - 力扣（LeetCode）",
+                "congratulation": "恭喜获得",
+                "genPoster": "生成海报",
+                "genPostering": "生成中...",
+                "saveImgMobile": "长按图片保存",
+                "saveImgPc": "右键保存图片",
+                "medalEmpty": "暂无可领取的勋章"
+              },
+              "recordEventType": {
+                "start": "开始",
+                "switchQuestion": "切换问题",
+                "switchLang": "切换语言",
+                "pageVisible": "切换页面",
+                "interpretCode": "运行代码",
+                "submitCode": "提交代码",
+                "end": "结束",
+                "input": "输入",
+                "undo": "撤销",
+                "redo": "重做",
+                "paste": "外部粘贴",
+                "changeCursor": "改变光标",
+                "debug": "调试",
+                "debugEnd": "结束调试"
+              },
+              "codeReplay": {
+                "title": "代码回放",
+                "redirectContent": "这个账号属于 LeetCode 国际服. 前往 leetcode.com 查看?",
+                "doNotShowAgain": "不再提示",
+                "eventHistory": "回放事件",
+                "skipInactive": "跳过非活跃事件",
+                "noCodeResults": "没有代码结果",
+                "size": "大小",
+                "chars": "字符",
+                "leaveContestPageN": "离开竞赛作答页",
+                "returnContestPage": "回到竞赛作答页"
+              },
+              "verified": "已认证"
+            },
+            "new-study-plan": {
+              "detail": {
+                "metadata": {
+                  "title": "{{plan}} - 学习计划 - 力扣（LeetCode）全球极客挚爱的技术成长平台",
+                  "description": "学习计划 - 力扣（LeetCode）全球极客挚爱的技术成长平台",
+                  "notFound": "未找到学习计划"
+                },
+                "weekTextAbbr": {
+                  "sun": "周日",
+                  "mon": "周一",
+                  "tue": "周二",
+                  "wed": "周三",
+                  "thu": "周四",
+                  "fri": "周五",
+                  "sat": "周六"
+                },
+                "weekText": {
+                  "sun": "周日",
+                  "mon": "周一",
+                  "tue": "周二",
+                  "wed": "周三",
+                  "thu": "周四",
+                  "fri": "周五",
+                  "sat": "周六"
+                },
+                "myPlan": "我的计划",
+                "problemLeft": "题待完成",
+                "problemsLeft": "题待完成",
+                "notification": "注意",
+                "setUpSp": "设置学习计划",
+                "solvedText": "完成",
+                "problem": "题",
+                "problems": "题",
+                "learnMore": "更多信息",
+                "you": "你",
+                "weeklyRanking": "周榜",
+                "weeklyRankingToolTip": "按本周完成题目数计算排名，每小时更新一次榜单数据（若本周未完成任何计划内题目，不计算排名）",
+                "solvePrev": "以下时间每天完成",
+                "solveNext": "道题",
+                "startTitle": "设置学习计划",
+                "confirmStartText": "计划保存后不可修改哦，确定保存吗？",
+                "quitTypeTipPrev": "请输入本计划标题：",
+                "quitTypeTipNext": " ",
+                "subscribeToUnlock": "升级 Plus 会员",
+                "subscribeToUnlockContent": "升级到 Plus 会员，可解锁该学习计划",
+                "start": "开始",
+                "share": "分享",
+                "backToExplore": "返回学习计划",
+                "goCurrentPage": "重新尝试该计划",
+                "premiumTip": "开通会员",
+                "copyLink": "复制链接",
+                "copiedSuccess": "已复制分享链接",
+                "more": "更多",
+                "quit": "退出",
+                "back": "返回",
+                "quitTitle": "关闭学习计划",
+                "quitContent": "当关闭此学习计划时，所有已解决问题的都会被重置，且无法恢复进度。你确定你要关闭吗？",
+                "showTags": "显示标签",
+                "summary": "概述",
+                "showMore": "展开",
+                "showLess": "收起",
+                "award": "勋章",
+                "awardCongratulation": "太棒啦！你已经获得此勋章",
+                "related": "相关计划",
+                "viewMore": "查看更多",
+                "todo": "待完成",
+                "attempted": "尝试过",
+                "solved": "已解答",
+                "markAsSolved": "标记为已解决",
+                "markAsSolvedTip": "你以前曾解决过这道题目，是否将其 '标记为已解决' ？",
+                "difficulty": "难度",
+                "congratulation": "🎉 恭喜你！",
+                "solvedAllProblemsText": "你已经解决了 {{title}} 中的所有问题！",
+                "checkBadge": "前往您的",
+                "profilePage": "个人主页",
+                "wearGlory": "并佩戴勋章！",
+                "checkMyStudyPlan": "回到我的学习计划",
+                "joinSuccessfully": "已加入",
+                "quitSuccessfully": "已退出",
+                "setSuccessfully": "已设置",
+                "errorTip": "遇到些问题，请再次尝试",
+                "quitTip": "若您退出该学习计划，所有已解决的问题都将被重置，且无法恢复。",
+                "pastSolved": "解答过",
+                "solution": "题解",
+                "points": "分",
+                "ranking": "排名"
+              },
+              "list": {
+                "metadata": {
+                  "title": "学习计划 - 在 LeetCode 上持续练习来获得面试的成功"
+                },
+                "title": "学习计划",
+                "ongoing": "进行中",
+                "myPlan": "我的学习计划",
+                "featured": "精选",
+                "showMore": "展开",
+                "revertOldPlan": "查看旧版的学习计划",
+                "revertOldPlanTipTitle": "🌟 返回到旧版的学习计划",
+                "revertOldPlanTipDesc": "你可以点击该按钮前往旧版的学习计划",
+                "cancel": "取消",
+                "iSee": "知道了"
+              },
+              "myStudyPlan": {
+                "metadata": {
+                  "title": "我的学习计划 - 力扣 (LeetCode) 全球极客挚爱的技术成长平台",
+                  "desc": "加入到该学习计划可以追踪你的做题进度，有效地获得能力的提升！"
+                },
+                "title": "我的学习计划",
+                "ongoing": "进行中",
+                "history": "已结束的计划",
+                "noOngoingPlan": "暂无进行中的计划",
+                "noHistoryPlan": "暂无已结束的计划"
+              },
+              "common": {
+                "studyPlan": "学习计划",
+                "tryNow": "立即开启",
+                "noTanks": "暂不尝试",
+                "newPlan": "✨ 全新的学习计划！",
+                "newPlanDesc": "加入一个新的学习计划，最大限度地发挥你的学习潜力。追踪你的进展，专注于每天的问题，以取得持续增长",
+                "seeAll": "查看更多",
+                "totalProgress": "完成进度",
+                "totalScore": "得分",
+                "progress": "完成进度",
+                "completed": "完成时间",
+                "giveUp": "退出时间",
+                "ongoing": "进行中",
+                "ongoingStudyPlan": "进行中的学习计划",
+                "later": "暂不参与",
+                "joinInQDTitle": "是否开始该学习计划？",
+                "joinInQD": "加入到该学习计划可以追踪你的做题进度，有效地获得能力的提升！",
+                "doNotRemind": "今天不再提示",
+                "exploreButton": "探索学习计划",
+                "notFoundText": "抱歉，无法找到该网页，请检查你的输入内容或重新探索一个新的学习计划"
+              },
+              "survey": {
+                "submit": "提交"
+              },
+              "satisfactionSurvey": {
+                "submitBtnText": "提交"
+              }
+            },
+            "progress-calendar": {
+              "dailyChallenge": "每日 1 题",
+              "thisMonth": "本月",
+              "fill": "补",
+              "redeem": "兑换",
+              "rules": "活动规则",
+              "rule": "规则",
+              "timeTravelTicket": "补卡券",
+              "markRules": "打卡规则",
+              "remarkRules": "补卡规则",
+              "guideline": "注意事项",
+              "markRuleOptions": {
+                "option1": {
+                  "title": "找到「每日 1 题」",
+                  "desc": "每天 0 点，题库页列表第 1 页置顶更新当天打卡题目。"
+                },
+                "option2": {
+                  "title": "提交当日打卡",
+                  "desc": "成功提交则记为完成打卡，并获得 10 力扣积分。若这道题之前做过，需在打卡当天重新提交解答。"
+                },
+                "option3": {
+                  "title": "完成整月打卡，获得勋章",
+                  "desc": "完成整月「每日 1 题」打卡，可额外获得 全勤 100 力扣积分及「月度打卡勋章」。"
+                }
+              },
+              "remarkRuleOptions": {
+                "option1": {
+                  "title": "积分兑换补卡券",
+                  "desc": "日历点击「兑换」或直接前往力扣商店兑换补卡券，每月可兑 3 张。"
+                },
+                "option2": {
+                  "title": "找到补卡题目",
+                  "desc": "点击日历中缺卡的日期直接进入缺卡题目进行做题。补卡券使用范围：任意一道缺卡题目。"
+                },
+                "option3": {
+                  "title": "完成补卡，达成全勤成就",
+                  "desc": "成功提交缺卡题目，并确认使用补卡券。若补卡后完成整月打卡，可获得「月度打卡勋章」。"
+                }
+              },
+              "markGuideline": {
+                "option1": "每日打卡 10 积分将在完成任务后实时发放；",
+                "option2": "整月打卡 100 积分奖励在每月最后 1 天完成打卡任务时发放。",
+                "option3": "每月最后 1 天完成整月打卡后发放勋章，也可以在「个人主页」查看确认；",
+                "option4": "补卡后完成整月打卡即可获得勋章，可在「个人主页」查看确认。",
+                "option5": "Plus 会员每周可额外打卡一题。提交通过后，将获得 35 个积分。"
+              },
+              "remarkGuideline": {
+                "option1": "当月兑换的补卡券仅限当月使用，次月失效；",
+                "option2": "补卡券兑换时间：每月 第 1 天 0:00 至 最后一天 23:00；",
+                "option3": "补卡后达成全勤成就，可获得月度打卡勋章，但无全勤 100 积分奖励。",
+                "option4": "After using time travel ticket to complete a problem, you can earn the 10 LeetCoins for completing the problem. However, you’ll not be qualified to earn additional LeetCoins for completing the entire challenge."
+              },
+              "rightText": "该活动解释权在法律规定范围内归力扣所有"
+            },
+            "problemlist": {
+              "metadata": {
+                "defaultTitle": "题单 - 力扣（LeetCode）全球极客挚爱的技术成长平台",
+                "title": "{{title}} - 力扣（LeetCode）全球极客挚爱的技术成长平台"
+              },
+              "tags": "Tags",
+              "todo": "待完成",
+              "attempted": "尝试过",
+              "solved": "已解答",
+              "move": "拖动排序",
+              "removeFromList": "移除",
+              "addToList": "添加至题单",
+              "moveToTop": "置顶",
+              "moveToBottom": "置底",
+              "nullList": "Oops, 该题单不存在！",
+              "privateList": "该题单已设为私密",
+              "noQuestions": "暂无题目",
+              "noSearchResult": "无搜索结果",
+              "goToProblemSet": "前往题库",
+              "difficulty": {
+                "easy": "简单",
+                "medium": "中等",
+                "hard": "困难"
+              },
+              "acceptance": "通过率",
+              "nav-panel": {
+                "title": "我的题单",
+                "fold": "折叠",
+                "unfold": "展开",
+                "createdByMe": "我创建的",
+                "savedByMe": "我收藏的",
+                "public": "公开",
+                "private": "私密",
+                "remove": "取消收藏",
+                "listInvalid": "题单已失效",
+                "newList": "创建题单",
+                "newSmartList": "生成智能题单...",
+                "smartList": "智能题单",
+                "studyPlan": "学习计划",
+                "oldLibrary": "题库",
+                "library": "题目",
+                "myList": "我的题单",
+                "oldMyList": "我创建的",
+                "mySaved": "我收藏的"
+              },
+              "description": {
+                "cover": {
+                  "editCover": "修改封面",
+                  "emojis": "表情符号",
+                  "image": "自定义",
+                  "random": "随机一图",
+                  "background": "背景色",
+                  "chooseBackground": "请选择背景色",
+                  "Recommend": "推荐",
+                  "Smileys \u0026 Emotion": "表情",
+                  "People \u0026 Body": "角色",
+                  "Animals \u0026 Nature": "动物与自然",
+                  "Food \u0026 Drink": "食物与饮品",
+                  "Activities": "活动",
+                  "Travel \u0026 Places": "旅行与景点",
+                  "Objects": "物品",
+                  "Symbols": "符号",
+                  "Flags": "旗帜",
+                  "uploadImage": "上传图片",
+                  "uploadRecommendedSize": "建议尺寸为 200 x 200 像素",
+                  "uploadSizeLimit": "每个文件的最大尺寸为 5 MB",
+                  "cancel": "取消",
+                  "save": "保存"
+                },
+                "operations": {
+                  "updated": "更新时间：",
+                  "noQuestions": "暂无题目",
+                  "questions": "题",
+                  "public": "公开",
+                  "makePublic": "设为公开",
+                  "private": "私密",
+                  "makePrivate": "设为私密",
+                  "publicToast": "题单已公开",
+                  "privateToast": "已设为私密",
+                  "practice": "开始练习",
+                  "random": "随机一题",
+                  "listSave": "收藏",
+                  "listSaved": "已收藏",
+                  "listSavedByCount": "人收藏",
+                  "listSavedToast": "已收藏",
+                  "listUnsavedToast": "已取消收藏",
+                  "share": "分享",
+                  "fork": "Fork",
+                  "forkToast": "题单已 Fork!",
+                  "more": "更多",
+                  "delete": "删除",
+                  "deleteList": "删除题单",
+                  "deleteAlert": "您确定要删除此题单吗？本操作无法撤销。",
+                  "cancel": "取消",
+                  "create": "创建",
+                  "created": "已创建",
+                  "addQuestions": "添加题目",
+                  "addToList": "添加到题单",
+                  "hasSelected": "已选 {{count}} 题",
+                  "genSmartList": "生成智能题单",
+                  "createNewList": "创建新题单",
+                  "updateRuleQuestionTip": "已包含 {{count}} 道题，将根据所选条件自动更新",
+                  "updateRuleQuestionsTip": "已包含 {{count}} 道题，将根据所选条件自动更新",
+                  "editRule": "设置规则",
+                  "addRules": "添加规则",
+                  "editRuleDesc": "添加难度、知识点等多维条件，按需定制你的专属题集",
+                  "setCondition": "设置条件",
+                  "acceptDelete": "确定",
+                  "deleteToast": "题单已删除",
+                  "edit": "编辑",
+                  "editListInfo": "编辑题单信息",
+                  "title": "标题",
+                  "titlePlaceholder": "请输入题单名称",
+                  "description": "描述",
+                  "descriptionPlaceholder": "请简述本题单内容主题，例如：收集有趣的动态规划题",
+                  "save": "保存",
+                  "infoSavedToast": "保存成功！",
+                  "clickToReadMore": "点击查看全文",
+                  "nonLoggedInDialog": {
+                    "saveTitle": "收藏题单",
+                    "saveContent": "登录后即可收藏题单",
+                    "forkTitle": "Fork 题单",
+                    "forkContent": "登录后即可 fork 题单",
+                    "notNow": "以后再说",
+                    "logIn": "登录"
+                  },
+                  "confirmPlusDialogTitle": "升级 Plus 会员",
+                  "confirmPlusDialogContent1": "本智能题单含会员专享筛选条件，需升级为会员才能使用。",
+                  "confirmPlusDialogContent2": "若会员失效后编辑规则，会员专享筛选条件将会被清除。",
+                  "confirmPlusEditRulesDialogBtn": "编辑规则",
+                  "confirmPlusDialogBtn": "升级 Plus 会员"
+                },
+                "progress": {
+                  "progress": "进度",
+                  "resetProgress": "重置进度",
+                  "resetAlert": "重置后，本题单进度将被清除（不影响题库或其他题单）。确定重置吗？此操作不可撤销。",
+                  "cancel": "取消",
+                  "reset": "确定",
+                  "resetToast": "进度已重置",
+                  "easy": "简单",
+                  "medium": "中等",
+                  "hard": "困难",
+                  "solved": "已解答",
+                  "acceptance": "通过率",
+                  "beats": "击败比例",
+                  "attempting": "尝试过",
+                  "checkReset": "同时清除代码编辑器草稿"
+                }
+              },
+              "company": {
+                "nullList": "Oops, 该企业不存在！",
+                "subscribeText1": "升级至 Plus 会员",
+                "subscribeText2": "解锁更多企业高频面试题。",
+                "subscribe": "升级 Plus 会员",
+                "learnMore": "查看权益",
+                "freeQuestion": "免费高频面试题",
+                "claim": "领取",
+                "claiming": "领取中…",
+                "saved": "已收藏",
+                "savedByCount": "人收藏",
+                "updated": "更新时间：",
+                "description": "简介",
+                "filter": "筛选",
+                "status": "状态",
+                "todo": "未开始",
+                "attempted": "尝试过",
+                "solved": "已解答",
+                "difficulty": "难度",
+                "easy": "简单",
+                "medium": "中等",
+                "hard": "困难",
+                "role": "岗位",
+                "rolePlaceholder": "请选择",
+                "reset": "清空筛选",
+                "tags": "标签",
+                "showTags": "显示标签",
+                "frequency": "出题频率",
+                "discuss": "讨论",
+                "chanceUsedUp": "免费机会已用完，升级 Plus 会员获取更多高频面试题。",
+                "subscribeNow": "升级会员",
+                "claimSignIn": "登录后领取 1 道面试题。",
+                "signIn": "登录",
+                "clickToReadMore": "点击查看详情",
+                "interviewTime": "面试时间",
+                "interviewTimeTip": "题单进度与当前所选面试时间相关",
+                "frequencyTip": "按出题频率倒序排列",
+                "ok": "好的",
+                "subscribeFrequency": "升级 Plus 会员查看出题频率"
+              },
+              "points": "分",
+              "filter": {
+                "difficulty": "难度",
+                "status": "状态",
+                "list": "题单",
+                "tag": "标签",
+                "tagSearch": "筛选标签",
+                "expand": "展开",
+                "collapse": "收起",
+                "reset": "重置",
+                "searchPlaceholder": "搜索题目、编号或内容",
+                "noResult": "暂无搜索结果",
+                "search": "搜索",
+                "filter": "筛选",
+                "filtered": "已筛选",
+                "showSaveAsSmartListBtn": "保存为智能题单",
+                "match": "匹配",
+                "matchTitle": "过滤条件：",
+                "is": "等于",
+                "not": "不等于",
+                "range": "介于",
+                "past": "过去",
+                "all": "所有",
+                "any": "任一",
+                "days": "天",
+                "including": "Plus 内容",
+                "excluding": "非 Plus 内容",
+                "filterName": {
+                  "frequency": "出题频率",
+                  "companies": "企业",
+                  "position": "岗位",
+                  "status": "状态",
+                  "difficulty": "难度",
+                  "topics": "知识点",
+                  "lang": "语言",
+                  "acceptance": "通过率",
+                  "lastSubmit": "最近提交时间",
+                  "published": "题目发布时间",
+                  "premium": "Plus 内容"
+                },
+                "filterNameAbbr": {
+                  "frequency": "出题频率",
+                  "companies": "企业",
+                  "position": "岗位",
+                  "status": "状态",
+                  "difficulty": "难度",
+                  "topics": "知识点",
+                  "lang": "语言",
+                  "acceptance": "通过率",
+                  "lastSubmit": "最近提交",
+                  "published": "发布",
+                  "premium": "Plus"
+                },
+                "premiumTooltip": {
+                  "frequency": "升级 Plus 会员筛选出题频率",
+                  "companies": "升级 Plus 会员筛选企业",
+                  "position": "升级 Plus 会员筛选岗位"
+                },
+                "sort": {
+                  "custom": "默认排序",
+                  "frequency": "出题频率",
+                  "difficulty": "难度",
+                  "ac_rate": "通过率",
+                  "frontend_id": "题号",
+                  "premiumOnlyTip": "升级 Plus 会员筛选出题频率",
+                  "tooltip": {
+                    "custom": "默认排序",
+                    "frequency": "按出题频率排序",
+                    "difficulty": "按难度排序",
+                    "ac_rate": "按通过率排序",
+                    "frontend_id": "按标题排序"
+                  }
+                },
+                "random": "随机一题",
+                "addQuestionsToListTip_one": "将 {{count}} 题添加至题单",
+                "addQuestionsToListTip_other": "将 {{count}} 题添加至题单",
+                "backToTop": "回到顶部",
+                "totalNum": "{{count}} 题"
+              }
+            }
+          }
+        },
+        "initialLocale": "en",
+        "ns": ["common", "new-study-plan", "progress-calendar", "problemlist"],
+        "userConfig": {
+          "i18n": {
+            "defaultLocale": "zh",
+            "locales": ["en", "zh"]
+          },
+          "react": {
+            "useSuspense": false
+          },
+          "reloadOnPrerender": false,
+          "default": {
+            "i18n": {
+              "defaultLocale": "zh",
+              "locales": ["en", "zh"]
+            },
+            "react": {
+              "useSuspense": false
+            },
+            "reloadOnPrerender": false
+          }
+        }
+      }
+    },
+    "enableNewVersion": false,
+    "__N_SSG": true
+  },
+  "page": "/studyplan/[slug]",
+  "query": {
+    "slug": "leetcode-75"
+  },
+  "buildId": "f0kyBHoCAOXQ_ay5hawnr",
+  "isFallback": false,
+  "isExperimentalCompile": false,
+  "gsp": true,
+  "appGip": true,
+  "scriptLoader": []
+}
