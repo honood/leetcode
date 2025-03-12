@@ -1,7 +1,9 @@
-// HoNooD
+// HoNooD <honood@gmail.com>
+// 2025.03.11 18:55
 // 2024.05.17 17:58
 
 // 399. Evaluate Division
+// https://leetcode.com/problems/evaluate-division/?envType=study-plan-v2&envId=leetcode-75
 // https://leetcode.com/problems/evaluate-division/description/?envType=study-plan-v2&envId=top-interview-150
 
 // https://en.wikipedia.org/wiki/Directed_graph
@@ -11,127 +13,255 @@
 // https://en.wikipedia.org/wiki/Graph_theory
 // https://en.wikipedia.org/wiki/Glossary_of_graph_theory
 
-auto __unsync_ios_stdio = ios::sync_with_stdio(false);
-auto __untie_cin = cin.tie(nullptr);
+auto __unsync_with_stdio = std::ios::sync_with_stdio(false);
+auto __uncin_tie = std::cin.tie(nullptr);
 
+// Note:
+// 1. The input is always valid. You may assume that evaluating the queries will
+// not result in division by zero and that there is no contradiction.
+// 2. The variables that do not occur in the list of equations are undefined, so
+// the answer cannot be determined for them.
 class Solution {
 public:
-  vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {
-    // build the graph
-    graph_.clear();
-    for (int i = 0; i < equations.size(); ++i) {
-      string const& u = equations[i][0];
-      string const& v = equations[i][1];
-      double weight = values[i];
-      graph_[u][v] = weight;
-      graph_[v][u] = 1.0 / weight;
-    }
-
-    // Note: do not use brace-initialization, i.e. uniform initialization
-    vector<double> results(queries.size(), -1.0);
-    for (int i = 0; i < queries.size(); ++i) {
-      visited_.clear();
-      results[i] = dfs(queries[i][0], queries[i][1]);
-    }
-
-    return results;
+  // Constraints:
+  //   - values.length == equations.length
+  //   - 0.0 < values[i] <= 20.0
+  //
+  // Note: Nodes in `equations` and `queries` may not form a connected graph!!!
+  vector<double> calcEquation(vector<vector<string>>& equations,
+                              vector<double>& values,
+                              vector<vector<string>>& queries) {
+    return calc_equation_v1(equations, values, queries);
   }
 
 private:
-  double dfs(string const& start, string const& end) {
-    if (graph_.find(start) == graph_.end() || graph_.find(end) == graph_.end()) {
-      return -1.0;
-    }
-
-    if (start == end) {
-      return 1.0;
-    }
-
-    if (graph_[start].find(end) != graph_[start].end()) {
-      return graph_[start][end];
-    }
-
-    visited_.insert(start);
-
-    for (auto const& neighbor : graph_[start]) {
-      if (visited_.find(neighbor.first) != visited_.end()) {
-        continue;
-      }
-
-      double res = dfs(neighbor.first, end);
-      // Note: do not use `res != -1.0`
-      if (std::abs(-1.0 - res) > std::numeric_limits<double>::epsilon()) {
-        return res * neighbor.second;
-      }
-    }
-
-    // Backtrack by unmarking the current node as visited (optional)
-    visited_.erase(start);
-
-    return -1.0;
-  }
-
-  unordered_map<string, unordered_map<string, double>> graph_{};
-  unordered_set<string> visited_{};
-};
-
-class Solution_2 {
-public:
-  vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {
-    // build the graph
+  // DFS
+  //
+  // - Time complexity: O(E + Q*V) where E is the number of equations, Q is the
+  // number of queries, and V is the number of variables
+  // - Space complexity: O(V) for the graph and visited set
+  vector<double> calc_equation_v1(vector<vector<string>> const& equations,
+                                  vector<double> const& values,
+                                  vector<vector<string>> const& queries) {
     unordered_map<string, unordered_map<string, double>> graph{};
-    for (int i = 0; i < equations.size(); ++i) {
+    for (int i = 0; i < values.size(); ++i) {
       string const& u = equations[i][0];
       string const& v = equations[i][1];
-      double weight = values[i];
-      graph[u][v] = weight;
-      graph[v][u] = 1.0 / weight;
+      double w = values[i];
+      graph[u][v] = w;
+      graph[v][u] = 1.0 / w;
     }
 
-    vector<double> results(queries.size(), -1.0);
+    unordered_set<string> visited{};
+
+    using csr = string const&;
+    std::function<double(csr, csr)> dfs
+        = [&dfs, &graph, &visited](csr current, csr target) {
+            visited.emplace(current);
+
+            if (graph[current].contains(target)) {
+              return graph[current][target];
+            }
+
+            for (auto const& [neighbor, value] : graph[current]) {
+              if (visited.contains(neighbor)) {
+                continue;
+              }
+
+              double result = dfs(neighbor, target);
+              if (fabs(result + 1.0) > numeric_limits<double>::epsilon()) {
+                // result != -1.0
+                return value * result;
+              }
+            }
+            return -1.0;
+          };
+
+    vector<double> answers(queries.size(), -1.0);
     for (int i = 0; i < queries.size(); ++i) {
       string const& start = queries[i][0];
       string const& end = queries[i][1];
-
-      if (graph.find(start) == graph.end() || graph.find(end) == graph.end()) {
-        // Note: no need to set results[i] as `-1.0`, it already is.
+      if (!graph.contains(start) || !graph.contains(end)) {
         continue;
       }
 
       if (start == end) {
-        results[i] = 1.0;
+        answers[i] = 1.0;
         continue;
       }
 
-      unordered_set<string> visited{};
-      visited.reserve(graph.size());
-      visited.emplace(start);
-      queue<pair<string, double>> q{};
-      q.emplace(start, 1.0);
-      while (!q.empty()) {
-        pair<string, double> curr = q.front();
-        q.pop();
+      visited.clear();
+      answers[i] = dfs(start, end);
+    }
+    return answers;
+  }
 
-        string const& vertex = curr.first;
-        double acc = curr.second;
-        if (vertex == end) {
-          results[i] = acc;
-          break;
-        }
+  // BFS
+  //
+  // - Time complexity: O(E + Q*V) where E is the number of equations, Q is the
+  // number of queries, and V is the number of variables
+  // - Space complexity: O(V) for the graph and queue
+  vector<double> calc_equation_v2(vector<vector<string>> const& equations,
+                                  vector<double> const& values,
+                                  vector<vector<string>> const& queries) {
+    unordered_map<string, unordered_map<string, double>> graph{};
+    for (int i = 0; i < values.size(); ++i) {
+      string const& u = equations[i][0];
+      string const& v = equations[i][1];
+      double w = values[i];
+      graph[u][v] = w;
+      graph[v][u] = 1.0 / w;
+    }
 
-        for (auto const& neighbor : graph[vertex]) {
-          string const& vertex = neighbor.first;
-          if (visited.find(vertex) != visited.end()) {
+    vector<double> answers(queries.size(), -1.0);
+    for (int i = 0; i < queries.size(); ++i) {
+      string const& start = queries[i][0];
+      string const& end = queries[i][1];
+
+      if (!graph.contains(start) || !graph.contains(end)) {
+        answers[i] = -1.0;
+        continue;
+      }
+
+      if (start == end) {
+        answers[i] = 1.0;
+        continue;
+      }
+
+      std::queue<pair<string, double>> queue{{{start, 1.0}}};
+      unordered_set<string> visited{start};
+      bool found = false;
+      while (!queue.empty() && !found) {
+        auto [node, acc] = queue.front();
+        queue.pop();
+
+        for (auto const& [neighbor, value] : graph[node]) {
+          if (visited.contains(neighbor)) {
             continue;
           }
 
-          double weight = neighbor.second;
-          q.emplace(vertex, acc * weight);
-          visited.emplace(vertex);
-        } // for
-      } // while
-    } // for
+          visited.emplace(neighbor);
 
-    return results;
+          double new_acc = value * acc;
+          if (neighbor == end) {
+            answers[i] = new_acc;
+            found = true;
+            break;
+          }
+
+          queue.emplace(neighbor, new_acc);
+        }
+      }
+
+      if (!found) {
+        answers[i] = -1.0;
+      }
+    }
+    return answers;
+  }
+
+  // Union-Find: https://en.wikipedia.org/wiki/Disjoint-set_data_structure
+  // 并查集：https://zh.wikipedia.org/wiki/%E5%B9%B6%E6%9F%A5%E9%9B%86
+  //
+  // Connectivity (graph theory):
+  // https://en.wikipedia.org/wiki/Connectivity_(graph_theory) Kruskal's
+  // algorithm: https://en.wikipedia.org/wiki/Kruskal%27s_algorithm
+  //
+  // - Time complexity: O((E + Q) * α(N)) where E is the number of equations, Q
+  // is the number of queries, and N is the total number of variables.
+  // - Space complexity: O(N)
+  vector<double> calc_equation_v3(vector<vector<string>> const& equations,
+                                  vector<double> const& values,
+                                  vector<vector<string>> const& queries) {
+    class UnionFind {
+    public:
+      string find(string const& x) {
+        if (!parent.contains(x)) {
+          parent.emplace(x, x);
+          weight.emplace(x, 1.0);
+          return x;
+        }
+
+        if (string original_parent = parent[x]; original_parent != x) {
+          parent[x] = find(original_parent);
+          // Given, before updating parent[x]:
+          //   1. weight[x] = x / original_parent
+          //   2. weight[original_parent] = original_parent / parent[x]
+          // Then, after updating parent[x]:
+          //   weight[x] = x / parent[x]
+          //             = (weight[x] * original_parent)
+          //               / (original_parent / weight[original_parent])
+          //             = weight[x] * weight[original_parent]
+          weight[x] *= weight[original_parent];
+        }
+        return parent[x];
+      }
+
+      void union_sets(string const& x, string const& y, double value) {
+        string root_x = find(x);
+        string root_y = find(y);
+        if (root_x != root_y) {
+          // Given, before updating parent[root_x]:
+          //   1. x / y = value
+          //   2. x / root_x = weight[x];
+          //   3. y / root_y = weight[y];
+          // Then, after updating parent[root_x]:
+          //   weight[root_x] = root_x / root_y
+          //                  = (x / weight[x]) / (y / weight[y])
+          //                  = (x / y) * (weight[y] / weight[x])
+          //                  = value * weight[y] / weight[x]
+          parent[root_x] = root_y;
+          weight[root_x] = value * weight[y] / weight[x];
+        }
+      }
+
+      double query(string const& x, string const& y) {
+        if (!parent.contains(x) || !parent.contains(y)) {
+          return -1.0;
+        }
+
+        if (x == y) {
+          return 1.0;
+        }
+
+        string root_x = find(x);
+        string root_y = find(y);
+        if (root_x != root_y) {
+          return -1.0;
+        }
+
+        // Given:
+        //   1. weight[x] = x / root_x
+        //   2. weight[y] = y / root_y
+        //   3. root_x = root_y
+        // Then:
+        //   x / y = (weight[x] * root_x) / (weight[y] * root_y)
+        //         = (weight[x] / weight[y]) * (root_x / root_y)
+        //         = (weight[x] / weight[y]) * 1.0
+        //         = weight[x] / weight[y]
+        return weight[x] / weight[y];
+      }
+
+    private:
+      unordered_map<string, string> parent;
+      unordered_map<string, double> weight;
+    };
+
+    UnionFind uf{};
+
+    for (int i = 0; i < values.size(); ++i) {
+      string const& u = equations[i][0];
+      string const& v = equations[i][1];
+      double w = values[i];
+      uf.union_sets(u, v, w);
+    }
+
+    vector<double> answers(queries.size(), -1.0);
+    for (int i = 0; i < queries.size(); ++i) {
+      string start = queries[i][0];
+      string end = queries[i][1];
+      answers[i] = uf.query(start, end);
+    }
+    return answers;
   }
 };
