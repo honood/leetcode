@@ -124,7 +124,7 @@
 1. [1137\. N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/?envType=study-plan-v2&envId=leetcode-75) [EASY] ([C++](solutions/1137-n-th-tribonacci-number.cpp))
 2. [746\. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/?envType=study-plan-v2&envId=leetcode-75) [EASY] ([C++](solutions/0746-min-cost-climbing-stairs.cpp))
 3. [198\. House Robber](https://leetcode.com/problems/house-robber/?envType=study-plan-v2&envId=leetcode-75) [MEDIUM] ([C++](solutions/0198-house-robber.cpp))
-4. [790\. Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/?envType=study-plan-v2&envId=leetcode-75) [MEDIUM]
+4. [790\. Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/?envType=study-plan-v2&envId=leetcode-75) [MEDIUM] ([C++](solutions/0790-domino-and-tromino-tiling.cpp))
 
 ### DP - Multidimensional
 
