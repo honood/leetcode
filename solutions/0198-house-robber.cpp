@@ -3,109 +3,86 @@
 
 // 198. House Robber
 // https://leetcode.com/problems/house-robber/description/?envType=study-plan-v2&envId=top-interview-150
+// https://leetcode.com/problems/house-robber/description/?envType=study-plan-v2&envId=leetcode-75
 
 // https://en.wikipedia.org/wiki/Dynamic_programming
 
-auto __unsync_ios_stdio = ios::sync_with_stdio(false);
-auto __untie_cin = cin.tie(nullptr);
+auto __unsync_with_stdio = std::ios::sync_with_stdio(false);
+auto __uncin_tie = std::cin.tie(nullptr);
 
-// Dynamic Programming Approach
-//
-// 1. Define State:
-//    - Use `dp[i]` to represent the maximum amount of money you can rob up to the `i`-th house.
-//
-// 2. State Transition:
-//    - If you rob the current house `i`, the total amount will be `nums[i] + dp[i-2]`.
-//    - If you do not rob the current house `i`, the total amount will be `dp[i-1]`.
-//    - Hence, `dp[i] = max(nums[i] + dp[i-2], dp[i-1])`.
-//
-// 3. Initial State:
-//    - If there are no houses, the result is `0`.
-//    - If there is only one house, the result is the value of that house `nums[0]`.
-//    - If there are two houses, the result is the maximum value between the two houses.
-//
-// 4. Final State:
-//    - The last element in `dp` will hold the maximum amount of money that can be robbed.
 class Solution {
 public:
   int rob(vector<int>& nums) {
-    // if there are no house, the maximum amount is 0
-    if (nums.empty()) {
-      return 0;
-    }
+    return rob_v1(nums);
+  }
 
+private:
+  // - Time complexity: O(n)
+  // - Space complexity: O(n)
+  int rob_v1(vector<int> const& nums) {
     int n = nums.size();
+    if (n == 0) return 0;
+    if (n == 1) return nums[0];
 
-    // if there is only one house, return the amount in that house
-    if (n == 1) {
-      return nums[0];
-    }
+    // dp[i] represents the maximum amount that can be robbed up to house i
+    vector<int> dp(n);
 
-    // if there are two houses, return the maximum amount between them
-    if (n == 2) {
-      return std::max(nums[0], nums[1]);
-    }
+    // Base cases
+    dp[0] = nums[0];
+    dp[1] = std::max(nums[0], nums[1]);
 
-    // initialize the dp array
-    vector<int> dp(n, 0);
-    dp[0] = nums[0]; // max amount for the first house
-    dp[1] = std::max(nums[0], nums[1]); // max amount for the first two houses
-
-    // fill the dp array according to the recurrence relation
-    // Note: recurrence relation: [计]递归关系，递推关系
+    // Fill the dp table using the recurrence relation
     for (int i = 2; i < n; ++i) {
-      dp[i] = std::max(nums[i] + dp[i - 2], dp[i - 1]);
+      // Option 1: Rob house i (cannot rob i-1)
+      int rob_current = nums[i] + dp[i - 2];
+      // Option 2: Don't rob house i (max is same as max up to i-1)
+      int skip_current = dp[i - 1];
+      dp[i] = std::max(rob_current, skip_current);
     }
 
+    // The final answer is the maximum amount considering all houses
     return dp[n - 1];
   }
-};
 
-// space optimized
-class Solution_2 {
-public:
-  int rob(vector<int>& nums) {
-    if (nums.empty()) {
-      return 0;
-    }
-
+  // - Time complexity: O(n)
+  // - Space complexity: O(1)
+  int rob_v2(vector<int> const& nums) {
     int n = nums.size();
+    if (n == 0) return 0;
+    if (n == 1) return nums[0];
 
-    int prev1 = nums[0];
-    if (n == 1) {
-      return prev1;
-    }
-
-    int prev2 = std::max(nums[0], nums[1]);
-    if (n == 2) {
-      return prev2;
-    }
+    int prev2 = nums[0]; // dp[i-2]
+    int prev1 = std::max(nums[0], nums[1]); // dp[i-1]
 
     for (int i = 2; i < n; ++i) {
-      int curr = std::max(nums[i] + prev1, prev2);
-      prev1 = prev2;
-      prev2 = curr;
+      int current = std::max(prev2 + nums[i], prev1);
+
+      prev2 = prev1;
+      prev1 = current;
     }
 
-    return prev2;
+    return prev1;
   }
 
-  // more concise code
-  /*
-  int rob(vector<int>& nums) {
-    if (nums.empty()) {
-      return 0;
-    }
+  // - Time complexity: O(n)
+  // - Space complexity: O(n)
+  int rob_v3(vector<int> const& nums) {
+    int n = nums.size();
+    vector<int> memo(n, -1);
+    std::function<int(int)> solve = [&solve, &nums, &memo](int i) {
+      // Base case: No houses left
+      if (i < 0) {
+        return 0;
+      }
 
-    int prev1 = 0; // maximum amount up to the house before the last
-    int prev2 = 0; // maximum amount up to the last house
-    for (int num : nums) {
-      int curr = max(num + prev1, prev2);
-      prev1 = prev2;
-      prev2 = curr;
-    }
+      if (memo[i] != -1) {
+        return memo[i];
+      }
 
-    return prev2;
+      memo[i] = std::max(nums[i] + solve(i - 2), solve(i - 1));
+      return memo[i];
+    };
+
+    return solve(n - 1);
   }
-  */
 };
