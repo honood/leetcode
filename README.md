@@ -137,7 +137,7 @@
 
 1. [338\. Counting Bits](https://leetcode.com/problems/counting-bits/?envType=study-plan-v2&envId=leetcode-75) [EASY] ([C++](solutions/0338-counting-bits.cpp))
 2. [136\. Single Number](https://leetcode.com/problems/single-number/?envType=study-plan-v2&envId=leetcode-75) [EASY] ([C++](solutions/0136-single-number.cpp))
-3. [1318\. Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/?envType=study-plan-v2&envId=leetcode-75) [MEDIUM]
+3. [1318\. Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/?envType=study-plan-v2&envId=leetcode-75) [MEDIUM] ([C++](solutions/1318-minimum-flips-to-make-a-or-b-equal-to-c.cpp))
 
 ### Trie
 

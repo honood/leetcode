@@ -106,7 +106,7 @@ private:
     vector<int> result(n + 1);
 
     for (int i = 0; i <= n; ++i) {
-#if __cplusplus >= 202002L
+#if __cplusplus >= 202002L && defined(__cpp_lib_bitops)
       // C++20 standard available: use std::popcount
       //   https://en.cppreference.com/w/cpp/numeric/popcount
       // It operates on unsigned types, so cast i.
@@ -183,6 +183,11 @@ private:
     vector<int> result(n + 1, 0);
 
     for (int i = 1; i <= n; ++i) {
+      // Brian Kernighan's algorithm
+      // https://en.wikipedia.org/wiki/Hamming_weight
+      // https://en.wikipedia.org/wiki/Bit_manipulation
+      // https://en.wikipedia.org/wiki/Bitwise_operation
+      //
       // The operation `i & (i-1)` clears (sets to 0) the rightmost set bit of
       // i. For example, if i = 6 (0b110), i-1 = 5 (0b101), i & (i-1) = 4
       // (0b100)
