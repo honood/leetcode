@@ -130,7 +130,7 @@
 
 1. [62\. Unique Paths](https://leetcode.com/problems/unique-paths/?envType=study-plan-v2&envId=leetcode-75) [MEDIUM]
 2. [1143\. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/?envType=study-plan-v2&envId=leetcode-75) [MEDIUM] ([C++](solutions/1143-longest-common-subsequence.cpp))
-3. [714\. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/?envType=study-plan-v2&envId=leetcode-75) [MEDIUM]
+3. [714\. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/?envType=study-plan-v2&envId=leetcode-75) [MEDIUM] ([C++](solutions/0714-best-time-to-buy-and-sell-stock-with-transaction-fee.cpp))
 4. [72\. Edit Distance](https://leetcode.com/problems/edit-distance/?envType=study-plan-v2&envId=leetcode-75) [MEDIUM] ([C++](solutions/0072-edit-distance.cpp))
 
 ### Bit Manipulation
