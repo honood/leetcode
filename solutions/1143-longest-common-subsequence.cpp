@@ -4,13 +4,14 @@
 // 1143. Longest Common Subsequence
 // https://leetcode.com/problems/longest-common-subsequence/?envType=study-plan-v2&envId=leetcode-75
 
+// Longest common subsequence
+// https://en.wikipedia.org/wiki/Longest_common_subsequence
+
 auto __unsync_with_stdio = std::ios::sync_with_stdio(false);
 auto __uncin_tie = std::cin.tie(nullptr);
 
 class Solution {
 public:
-  // Longest common subsequence
-  // https://en.wikipedia.org/wiki/Longest_common_subsequence
   int longestCommonSubsequence(string text1, string text2) {
     return longest_common_subsequence_v2(text1, text2);
   }
