@@ -4,10 +4,11 @@
 // 300. Longest Increasing Subsequence
 // https://leetcode.com/problems/longest-increasing-subsequence/description/?envType=study-plan-v2&envId=top-interview-150
 
-// https://en.wikipedia.org/wiki/Dynamic_programming
+// Longest increasing subsequence
+// https://en.wikipedia.org/wiki/Longest_increasing_subsequence
 
-auto __unsync_ios_stdio = ios::sync_with_stdio(false);
-auto __untie_cin = cin.tie(nullptr);
+auto __unsync_with_stdio = std::ios::sync_with_stdio(false);
+auto __uncin_tie = std::cin.tie(nullptr);
 
 // Dynamic Programming Approach
 //
