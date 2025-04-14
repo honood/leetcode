@@ -29,6 +29,7 @@ private:
       = [&solve, &text1, &text2, &memo](int i, int j) {
           // Base case: one of the strings is empty
           if (i == 0 || j == 0) return 0;
+
           if (memo[i][j] != -1) return memo[i][j];
 
           if (text1[i - 1] == text2[j - 1]) {
@@ -57,7 +58,7 @@ private:
     // Fill the dp table using the recurrence relation
     for (int i = 1; i <= m; ++i) {
       for (int j = 1; j <= n; ++j) {
-        // Check if characters at the curent end match
+        // Check if characters at the current end match
         if (text1[i - 1] == text2[j - 1]) {
           // If match, add 1 the LCS of prefixes ending before these characters
           dp[i][j] = dp[i - 1][j - 1] + 1;

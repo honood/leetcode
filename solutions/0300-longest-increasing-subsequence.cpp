@@ -10,130 +10,108 @@
 auto __unsync_with_stdio = std::ios::sync_with_stdio(false);
 auto __uncin_tie = std::cin.tie(nullptr);
 
-// Dynamic Programming Approach
-//
-// 1.	Define the State:
-//   - Let `dp[i]` represent the length of the longest increasing subsequence
-//     that ends with the element at index `i`.
-//
-// 2. Initial State:
-//   - Initialize each `dp[i]` to `1`, because the minimum length of LIS ending
-//     at any element is `1` (the element itself).
-//
-// 3. State Transition:
-//   - For each element `nums[i]`, check all previous elements `nums[j]` where
-//     `j < i`. If `nums[i]` is greater than `nums[j]`, then `nums[i]` can
-//     extend the increasing subsequence ending at `nums[j]`.
-//   - Update `dp[i]` as `dp[i] = max(dp[i], dp[j] + 1)`. This formula updates
-//     `dp[i]` to the maximum length by either:
-//     - Keeping the current value of `dp[i]` (no extension), or
-//     - Extending the subsequence ending at `nums[j]` by including `nums[i]`.
-//
-// 4.	Result:
-//   - The length of the longest increasing subsequence in the array will be the
-//     maximum value in the `dp` array, i.e., max(dp).
-//
-// Note: time complexity: O(n^2)
 class Solution {
 public:
   int lengthOfLIS(vector<int>& nums) {
-    if (nums.empty()) {
-      return 0;
-    }
+    return length_of_lis_v1(nums);
+  }
 
-    // DP array to store the length of LIS ending at each index
-    vector<int> dp(nums.size(), 1);
+private:
+  // - Time complexity: O(n^2)
+  // - Space complexity: O(n)
+  int length_of_lis_v1(vector<int> const& nums) {
+    if (nums.empty()) return 0;
+
+    int n = nums.size();
+
+    // dp[i] represents the length of the longest increasing subsequence ending
+    // at index i (nums[i] must be included)
+    //
+    // Base case: Each element itself forms an LIS of length 1.
+    vector<int> dp(n, 1);
 
     int max_len = 1;
-    for (int i = 1; i < nums.size(); ++i) {
-      // check all previous elements
+    for (int i = 1; i < n; ++i) {
       for (int j = 0; j < i; ++j) {
         if (nums[i] > nums[j]) {
+          // If we can extend the subsequence ending at j, update dp[i] if it
+          // leads to a longer subsequence.
           dp[i] = std::max(dp[i], dp[j] + 1);
         }
       }
-
       max_len = std::max(max_len, dp[i]);
     }
-
     return max_len;
   }
-};
 
-// The approach uses a combination of dynamic programming and binary search. It
-// maintains a list `lis` where `lis[i]` represents the smallest ending value of
-// an increasing subsequence of length `i+1`. For each element in the input
-// array, binary search is used to determine its position in the `lis` list.
-//
-// Note: time complexity: O(n*log(n))
-class Solution_2 {
-public:
-  int lengthOfLIS(vector<int>& nums) {
-    // store the increasing subsequence
-    vector<int> lis{};
-
-    for (int const& num : nums) {
-      // perform binary search to find the position to insert the current number
-      auto it = std::lower_bound(lis.begin(), lis.end(), num);
-
-      // if `num` is larger than all elements in `lis`, it should be appended
-      if (it == lis.end()) {
-        lis.emplace_back(num);
-      } else {
-        // otherwise, replace the element at the position found
-        *it = num;
-      }
-    }
-
-    return lis.size();
-  }
-
-  // Example 1: nums = [10, 9, 2, 5, 3, 7, 101, 18]
-  // i   nums[i]   lis
-  // ------------------------------
-  // 0   10        [10]
-  // 1   9         [9]
-  // 2   2         [2]
-  // 3   5         [2, 5]
-  // 4   3         [2, 3]
-  // 5   7         [2, 3, 7]
-  // 6   101       [2, 3, 7, 101]
-  // 7   18        [2, 3, 7, 18]
+  // Solution using Dynamic Programming with Binary Search (Patience Sorting analogy).
+  // https://en.wikipedia.org/wiki/Patience_sorting
   //
-  // Example 2: nums = [0, 1, 0, 3, 2, 3]
-  // i   nums[i]   lis
-  // ------------------------------
-  // 0   0         [0]
-  // 1   1         [0, 1]
-  // 2   0         [0, 1]
-  // 3   3         [0, 1, 3]
-  // 4   2         [0, 1, 2]
-  // 5   3         [0, 1, 2, 3]
-  int length_of_lis_debug(const vector<int>& nums) {
-    vector<int> lis{};
+  // - Time complexity: O(n * log(n))
+  // - Space complexity: O(n)
+  int length_of_lis_v2(vector<int> const& nums) {
+    // 'tails' is an array storing the smallest tail of all increasing
+    // subsequences with length i+1 at index i.
+    // Example: tails[0] = smallest tail of LIS of length 1
+    //          tails[1] = smallest tail of LIS of length 2
+    //          ...
+    // This array is always maintained in sorted order.
+    vector<int> tails{};
 
-    cout << left << setw(10) << "i" << setw(10) << "nums[i]" << "lis" << endl;
-    cout << string(40, '-') << endl;
-
-    for (int i = 0; i < nums.size(); ++i) {
-      int num = nums[i];
-      auto it = lower_bound(lis.begin(), lis.end(), num);
-      if (it == lis.end()) {
-        lis.push_back(num);
+    for (int num : nums) {
+      // Binary search to find the first element in 'tails' that is >= num.
+      // 'lower_bound' returns an iterator to the first element not less than
+      // 'num'.
+      auto it = std::lower_bound(tails.begin(), tails.end(), num);
+      if (it == tails.end()) {
+        // If 'num' is greater than all elements in 'tails', it means we can
+        // extend the longest increasing subsequence found so far. Append 'num'
+        // to 'tails', effectively increasing the length of the LIS by 1. The
+        // size of 'tails' directly corresponds to the current LIS length.
+        tails.emplace_back(num);
       } else {
+        // If we found an element *it (which is tails[i] for some i) such that
+        // *it >= num. It means 'num' can potentially replace 'tails[i]' to form
+        // an increasing subsequence of length i+1 that ends with a smaller
+        // number ('num') than the previous 'tails[i]'. Replacing 'tails[i]'
+        // with 'num' optimizes for the future: a smaller tail allows for more
+        // possibilities to extend the subsequence later. Crucially, this
+        // replacement *does not* change the length of 'tails'. Therefore, it
+        // reflects that we haven't found a *longer* LIS yet, but we've
+        // potentially found a "better" (smaller tail) LIS of the same length
+        // (i+1).
         *it = num;
       }
-
-      cout << left << setw(10) << i << setw(10) << num;
-      cout << "[";
-      for (size_t j = 0; j < lis.size(); ++j) {
-        if (j > 0) { cout << ", "; }
-        cout << lis[j];
-      }
-      cout << "]" << endl;
     }
-    cout << endl;
 
-    return lis.size();
+    // The final size of the 'tails' array gives the length of the Longest
+    // Increasing Subsequence.
+    //
+    // Why does tails.size() work?
+    // - The size only increases when we append (case: it == tails.end()), which
+    //   happens exactly when we find a number that can extend the *current*
+    //   longest subsequence.
+    // - The replacement step (case: else) doesn't change the size, correctly
+    //   reflecting that we haven't increased the maximum length found so far.
+    //
+    // Important Note: The 'tails' array itself at the end does *not*
+    // necessarily represent an actual LIS sequence from 'nums'.
+    //
+    // For instance, if `nums = [0, 8, 4, 12, 2]`:
+    // 1. Process 0: tails = [0]
+    // 2. Process 8: tails = [0, 8]
+    // 3. Process 4: 4 replaces 8. tails = [0, 4] (Length still 2)
+    // 4. Process 12: tails = [0, 4, 12]
+    // 5. Process 2: 2 replaces 4. tails = [0, 2, 12] (Length still 3)
+    // The final `tails` is `[0, 2, 12]`. The length 3 is correct (LIS is [0, 8,
+    // 12] or [0, 4, 12]). However, `[0, 2, 12]` is not a valid subsequence of
+    // the original `nums` because `12` appears *before* `2` in the input
+    // `nums`.
+    //
+    // The replacement step prioritizes maintaining the "smallest tail for each
+    // length" property, which might create a 'tails' sequence whose elements
+    // don't respect the original order in 'nums'. However, its *length*
+    // accurately tracks the LIS length.
+    return tails.size();
   }
 };
