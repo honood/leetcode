@@ -3,6 +3,7 @@
 
 // 208. Implement Trie (Prefix Tree)
 // https://leetcode.com/problems/implement-trie-prefix-tree/description/?envType=study-plan-v2&envId=top-interview-150
+// https://leetcode.com/problems/implement-trie-prefix-tree/?envType=study-plan-v2&envId=leetcode-75
 
 // trie / digital tree / prefix tree
 // https://en.wikipedia.org/wiki/Trie
@@ -10,8 +11,16 @@
 // radix tree
 // https://en.wikipedia.org/wiki/Radix_tree
 
-auto __unsync_ios_stdio = ios::sync_with_stdio(false);
-auto __untie_cin = cin.tie(nullptr);
+namespace v1 {
+class Trie;
+}
+namespace v2 {
+class Trie;
+}
+
+using Trie = v1::Trie;
+
+namespace v1 {
 
 class Trie {
 public:
@@ -119,9 +128,13 @@ private:
   Node* root_;
 };
 
+} // namespace v1
+
+namespace v2 {
+
 // Utilize `std::unique_ptr` for managing `Node*` pointers, introduced in C++11,
 // to ensure automatic and exception-safe memory management.
-class Trie_2 {
+class Trie {
 public:
   Trie() : root_{make_unique<Node>()} {}
 
@@ -168,6 +181,8 @@ private:
 
   unique_ptr<Node> root_;
 };
+
+} // namespace v2
 
 /**
  * Your Trie object will be instantiated and called as such:
