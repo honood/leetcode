@@ -1,62 +1,62 @@
-## 1. [Array (1872)](https://leetcode.com/problem-list/array/)
+## 1. [Array (1889)](https://leetcode.com/problem-list/array/)
 
-## 2. [String (776)](https://leetcode.com/problem-list/string/)
+## 2. [String (784)](https://leetcode.com/problem-list/string/)
 
-## 3. [Hash Table (682)](https://leetcode.com/problem-list/hash-table/)
+## 3. [Hash Table (688)](https://leetcode.com/problem-list/hash-table/)
 
-## 4. [Dynamic Programming (573)](https://leetcode.com/problem-list/dynamic-programming/)
+## 4. [Dynamic Programming (579)](https://leetcode.com/problem-list/dynamic-programming/)
 
-## 5. [Math (565)](https://leetcode.com/problem-list/math/)
+## 5. [Math (573)](https://leetcode.com/problem-list/math/)
 
-## 6. [Sorting (445)](https://leetcode.com/problem-list/sorting/)
+## 6. [Sorting (446)](https://leetcode.com/problem-list/sorting/)
 
-## 7. [Greedy (406)](https://leetcode.com/problem-list/greedy/)
+## 7. [Greedy (409)](https://leetcode.com/problem-list/greedy/)
 
-## 8. [Depth-First Search (315)](https://leetcode.com/problem-list/depth-first-search/)
+## 8. [Depth-First Search (316)](https://leetcode.com/problem-list/depth-first-search/)
 
-## 9. [Binary Search (303)](https://leetcode.com/problem-list/binary-search/)
+## 9. [Binary Search (305)](https://leetcode.com/problem-list/binary-search/)
 
-## 10. [Database (301)](https://leetcode.com/problem-list/database/)
+## 10. [Database (302)](https://leetcode.com/problem-list/database/)
 
-## 11. [Matrix (250)](https://leetcode.com/problem-list/matrix/)
+## 11. [Matrix (252)](https://leetcode.com/problem-list/matrix/)
 
-## 12. [Breadth-First Search (241)](https://leetcode.com/problem-list/breadth-first-search/)
+## 12. [Tree (242)](https://leetcode.com/problem-list/tree/)
 
-## 13. [Tree (241)](https://leetcode.com/problem-list/tree/)
+## 13. [Breadth-First Search (241)](https://leetcode.com/problem-list/breadth-first-search/)
 
-## 14. [Bit Manipulation (234)](https://leetcode.com/problem-list/bit-manipulation/)
+## 14. [Bit Manipulation (236)](https://leetcode.com/problem-list/bit-manipulation/)
 
-## 15. [Two Pointers (216)](https://leetcode.com/problem-list/two-pointers/)
+## 15. [Two Pointers (218)](https://leetcode.com/problem-list/two-pointers/)
 
-## 16. [Prefix Sum (196)](https://leetcode.com/problem-list/prefix-sum/)
+## 16. [Prefix Sum (200)](https://leetcode.com/problem-list/prefix-sum/)
 
-## 17. [Heap (Priority Queue) (190)](https://leetcode.com/problem-list/heap-priority-queue/)
+## 17. [Heap (Priority Queue) (194)](https://leetcode.com/problem-list/heap-priority-queue/)
 
-## 18. [Binary Tree (176)](https://leetcode.com/problem-list/binary-tree/)
+## 18. [Simulation (177)](https://leetcode.com/problem-list/simulation/)
 
-## 19. [Simulation (174)](https://leetcode.com/problem-list/simulation/)
+## 19. [Binary Tree (176)](https://leetcode.com/problem-list/binary-tree/)
 
 ## 20. [Stack (167)](https://leetcode.com/problem-list/stack/)
 
-## 21. [Graph (160)](https://leetcode.com/problem-list/graph/)
+## 21. [Counting (159)](https://leetcode.com/problem-list/counting/)
 
-## 22. [Counting (158)](https://leetcode.com/problem-list/counting/)
+## 22. [Graph (159)](https://leetcode.com/problem-list/graph/)
 
-## 23. [Sliding Window (147)](https://leetcode.com/problem-list/sliding-window/)
+## 23. [Sliding Window (149)](https://leetcode.com/problem-list/sliding-window/)
 
-## 24. [Design (129)](https://leetcode.com/problem-list/design/)
+## 24. [Design (130)](https://leetcode.com/problem-list/design/)
 
-## 25. [Enumeration (112)](https://leetcode.com/problem-list/enumeration/)
+## 25. [Enumeration (115)](https://leetcode.com/problem-list/enumeration/)
 
-## 26. [Backtracking (107)](https://leetcode.com/problem-list/backtracking/)
+## 26. [Backtracking (108)](https://leetcode.com/problem-list/backtracking/)
 
 ## 27. [Union Find (87)](https://leetcode.com/problem-list/union-find/)
 
-## 28. [Linked List (79)](https://leetcode.com/problem-list/linked-list/)
+## 28. [Linked List (81)](https://leetcode.com/problem-list/linked-list/)
 
-## 29. [Number Theory (69)](https://leetcode.com/problem-list/number-theory/)
+## 29. [Ordered Set (71)](https://leetcode.com/problem-list/ordered-set/)
 
-## 30. [Ordered Set (68)](https://leetcode.com/problem-list/ordered-set/)
+## 30. [Number Theory (69)](https://leetcode.com/problem-list/number-theory/)
 
 ## 31. [Monotonic Stack (65)](https://leetcode.com/problem-list/monotonic-stack/)
 
@@ -72,15 +72,15 @@ A monotonic stack is a stack data structure that maintains its elements in eithe
 4. Application:
     - Monotonic stacks are commonly used in problems involving the next greater element, next smaller element, stock span problems, and histogram problems.
 
-## 32. [Segment Tree (59)](https://leetcode.com/problem-list/segment-tree/)
+## 32. [Segment Tree (61)](https://leetcode.com/problem-list/segment-tree/)
 
 ## 33. [Trie (57)](https://leetcode.com/problem-list/trie/)
 
-## 34. [Combinatorics (52)](https://leetcode.com/problem-list/combinatorics/)
+## 34. [Combinatorics (53)](https://leetcode.com/problem-list/combinatorics/)
 
 ## 35. [Bitmask (49)](https://leetcode.com/problem-list/bitmask/)
 
-## 36. [Queue (47)](https://leetcode.com/problem-list/queue/)
+## 36. [Queue (48)](https://leetcode.com/problem-list/queue/)
 
 ## 37. [Recursion (47)](https://leetcode.com/problem-list/recursion/)
 
@@ -88,7 +88,7 @@ A monotonic stack is a stack data structure that maintains its elements in eithe
 
 ## 39. [Memoization (42)](https://leetcode.com/problem-list/memoization/)
 
-## 40. [Binary Indexed Tree (41)](https://leetcode.com/problem-list/binary-indexed-tree/)
+## 40. [Binary Indexed Tree (42)](https://leetcode.com/problem-list/binary-indexed-tree/)
 
 ## 41. [Geometry (40)](https://leetcode.com/problem-list/geometry/)
 
@@ -100,7 +100,7 @@ A monotonic stack is a stack data structure that maintains its elements in eithe
 
 ## 45. [Topological Sort (35)](https://leetcode.com/problem-list/topological-sort/)
 
-## 46. [Shortest Path (33)](https://leetcode.com/problem-list/shortest-path/)
+## 46. [Shortest Path (34)](https://leetcode.com/problem-list/shortest-path/)
 
 ## 47. [Rolling Hash (30)](https://leetcode.com/problem-list/rolling-hash/)
 
@@ -135,13 +135,13 @@ Monotonic queues offer a time-efficient solution (often O(n) complexity) to slid
 
 ## 52. [Brainteaser (17)](https://leetcode.com/problem-list/brainteaser/)
 
-## 53. [Randomized (12)](https://leetcode.com/problem-list/randomized/)
+## 53. [Doubly-Linked List (13)](https://leetcode.com/problem-list/doubly-linked-list/)
 
-## 54. [Merge Sort (12)](https://leetcode.com/problem-list/merge-sort/)
+## 54. [Randomized (12)](https://leetcode.com/problem-list/randomized/)
 
-## 55. [Doubly-Linked List (11)](https://leetcode.com/problem-list/doubly-linked-list/)
+## 55. [Merge Sort (12)](https://leetcode.com/problem-list/merge-sort/)
 
-## 56. [Counting Sort (10)](https://leetcode.com/problem-list/counting-sort/)
+## 56. [Counting Sort (11)](https://leetcode.com/problem-list/counting-sort/)
 
 ## 57. [Iterator (9)](https://leetcode.com/problem-list/iterator/)
 
