@@ -4,16 +4,16 @@
 // 2336. Smallest Number in Infinite Set
 // https://leetcode.com/problems/smallest-number-in-infinite-set/?envType=study-plan-v2&envId=leetcode-75
 
-namespace v1 {
+namespace smallest_infinite_set::v1 {
 class SmallestInfiniteSet;
 }
-namespace v2 {
+namespace smallest_infinite_set::v2 {
 class SmallestInfiniteSet;
 }
 
-using SmallestInfiniteSet = v1::SmallestInfiniteSet;
+using namespace smallest_infinite_set::v1;
 
-namespace v1 {
+namespace smallest_infinite_set::v1 {
 
 // Min-heap with hash set for existence check
 //
@@ -47,9 +47,9 @@ private:
   std::unordered_set<int> number_exists_{};
 };
 
-} // namespace v1
+} // namespace smallest_infinite_set::v1
 
-namespace v2 {
+namespace smallest_infinite_set::v2 {
 
 // Ordered set (automatically maintains order)
 //
@@ -80,7 +80,7 @@ private:
   std::set<int> added_back_{};
 };
 
-} // namespace v2
+} // namespace smallest_infinite_set::v1
 
 /**
  * Your SmallestInfiniteSet object will be instantiated and called as such:
