@@ -142,7 +142,7 @@
 ### Trie
 
 1. [208\. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/?envType=study-plan-v2&envId=leetcode-75) [MEDIUM] ([C++](solutions/0208-implement-trie-prefix-tree.cpp))
-2. [1268\. Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/?envType=study-plan-v2&envId=leetcode-75) [MEDIUM]
+2. [1268\. Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/?envType=study-plan-v2&envId=leetcode-75) [MEDIUM] ([C++](solutions/1268-search-suggestions-system.cpp))
 
 ### Intervals
 
