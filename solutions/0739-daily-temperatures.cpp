@@ -1,57 +1,100 @@
 // HoNooD <honood@gmail.com>
 // 2024.07.13 23:41
+// 2025.04.22 10:00
 
 // 739. Daily Temperatures
-// https://leetcode.com/problems/daily-temperatures/description/
+// https://leetcode.com/problems/daily-temperatures/description/?envType=study-plan-v2&envId=leetcode-75
 
-// Monotonic Stack
-//
-// A monotonic stack is a stack data structure that maintains its elements in
-// either an increasing or decreasing order. Here are its key properties:
-//
-// 1. Order Maintenance:
-//   - In a Monotonic Increasing Stack, each new element pushed onto the stack
-//     is greater than or equal to the element at the top of the stack.
-//   - In a Monotonic Decreasing Stack, each new element pushed onto the stack
-//     is less than or equal to the element at the top of the stack.
-// 2. Efficiency:
-//   - It allows for efficient retrieval of the next greater or next smaller
-//     element in a sequence, typically in linear time `O(n)`.
-// 3. Dynamic Updates:
-//   - As elements are added or removed, the stack dynamically maintains its
-//     monotonic property, ensuring that the operations of pushing and popping
-//     elements are efficient.
-// 4. Application:
-//   - Monotonic stacks are commonly used in problems involving the next greater
-//     element, next smaller element, stock span problems, and histogram
-//     problems.
-
-auto __unsync_ios_stdio = ios::sync_with_stdio(false);
-auto __untie_cin = cin.tie(nullptr);
+auto __unsync_with_stdio = std::ios::sync_with_stdio(false);
+auto __uncin_tie = std::cin.tie(nullptr);
 
 class Solution {
 public:
-  // using monotonic decreasing stack
-  //
-  // - Time Complexity: O(n)
   vector<int> dailyTemperatures(vector<int>& temperatures) {
+    return daily_temperatures_v2(temperatures);
+  }
+
+private:
+  // Time Limit Exceeded!
+  //
+  // - Time complexity: O(n^2)
+  // - Space complexity: O(n)
+  vector<int> daily_temperatures_v1(vector<int> const& temperatures) {
     int n = temperatures.size();
-    if (n <= 1) {
-      return vector<int>(n, 0);
-    }
-
-    vector<int> res(n, 0);
-    stack<int> stack{};
-
+    vector<int> result(n, 0);
     for (int i = 0; i < n; ++i) {
-      while (!stack.empty() && temperatures[i] > temperatures[stack.top()]) {
-        res[stack.top()] = i - stack.top();
+      for (int j = i + 1; j < n; ++j) {
+        if (temperatures[j] > temperatures[i]) {
+          result[i] = j - i;
+          break;
+        }
+      }
+    }
+    return result;
+  }
+
+  // - Time complexity: O(n)
+  // - Space complexity: O(n)
+  vector<int> daily_temperatures_v2(vector<int> const& temperatures) {
+    int n = temperatures.size();
+    vector<int> result(n, 0);
+    std::stack<int> stack{};
+
+    for (int i = n - 1; i >= 0; --i) {
+      while (!stack.empty() && temperatures[i] >= temperatures[stack.top()]) {
         stack.pop();
       }
 
-      stack.emplace(i);
+      if (!stack.empty()) {
+        result[i] = stack.top() - i;
+      }
+
+      stack.push(i);
     }
 
-    return res;
+    return result;
+  }
+
+  // - Time complexity: O(n)
+  // - Space complexity: O(n)
+  vector<int> daily_temperatures_v3(vector<int> const& temperatures) {
+    int n = temperatures.size();
+    vector<int> result(n, 0);
+    std::stack<int> stack{};
+
+    for (int i = 0; i < n; ++i) {
+      while (!stack.empty() && temperatures[i] > temperatures[stack.top()]) {
+        result[stack.top()] = i - stack.top();
+        stack.pop();
+      }
+
+      stack.push(i);
+    }
+
+    return result;
+  }
+
+  // - Time complexity: O(n)
+  // - Space complexity: O(n)
+  vector<int> daily_temperatures_v4(vector<int> const& temperatures) {
+    int n = temperatures.size();
+    vector<int> result(n, 0);
+
+    for (int i = n - 2; i >= 0; --i) {
+      int j = i + 1;
+      while (j < n && temperatures[i] >= temperatures[j]) {
+        if (result[j] == 0) {
+          j = n; // No warmer day
+        } else {
+          j += result[j]; // Jump to next warmer day
+        }
+      }
+
+      if (j < n) {
+        result[i] = j - i;
+      }
+    }
+
+    return result;
   }
 };
