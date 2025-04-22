@@ -152,7 +152,7 @@
 ### Monotonic Stack
 
 1. [739\. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/?envType=study-plan-v2&envId=leetcode-75) [MEDIUM] ([C++](solutions/0739-daily-temperatures.cpp))
-2. [901\. Online Stock Span](https://leetcode.com/problems/online-stock-span/?envType=study-plan-v2&envId=leetcode-75) [MEDIUM]
+2. [901\. Online Stock Span](https://leetcode.com/problems/online-stock-span/?envType=study-plan-v2&envId=leetcode-75) [MEDIUM] ([C++](solutions/0901-online-stock-span.cpp))
 
 ## [Top Interview 150](https://leetcode.com/studyplan/top-interview-150/)
 
