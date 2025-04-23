@@ -194,7 +194,7 @@
 2. [392\. Is Subsequence](https://leetcode.com/problems/is-subsequence/?envType=study-plan-v2&envId=top-interview-150) [EASY] ([C++](solutions/0392-is-subsequence.cpp))
 3. [167\. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/?envType=study-plan-v2&envId=top-interview-150) [MEDIUM]
 4. [11\. Container With Most Water](https://leetcode.com/problems/container-with-most-water/?envType=study-plan-v2&envId=top-interview-150) [MEDIUM] ([C++](solutions/0011-container-with-most-water.cpp))
-5. [15\. 3Sum](https://leetcode.com/problems/3sum/?envType=study-plan-v2&envId=top-interview-150) [MEDIUM]
+5. [15\. 3Sum](https://leetcode.com/problems/3sum/?envType=study-plan-v2&envId=top-interview-150) [MEDIUM] ([C++](solutions/0015-3sum.cpp))
 
 ### Sliding Window
 
@@ -509,7 +509,7 @@
 ### Two Pointers
 
 1. [11\. Container With Most Water](https://leetcode.com/problems/container-with-most-water/?envType=study-plan-v2&envId=top-100-liked) [MEDIUM] ([C++](solutions/0011-container-with-most-water.cpp))
-2. [15\. 3Sum](https://leetcode.com/problems/3sum/?envType=study-plan-v2&envId=top-100-liked) [MEDIUM]
+2. [15\. 3Sum](https://leetcode.com/problems/3sum/?envType=study-plan-v2&envId=top-100-liked) [MEDIUM] ([C++](solutions/0015-3sum.cpp))
 3. [42\. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/?envType=study-plan-v2&envId=top-100-liked) [HARD] ([C++](solutions/0042-trapping-rain-water.cpp))
 4. [283\. Move Zeroes](https://leetcode.com/problems/move-zeroes/?envType=study-plan-v2&envId=top-100-liked) [EASY] ([C++](solutions/0283-move-zeroes.cpp))
 
