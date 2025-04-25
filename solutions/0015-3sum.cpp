@@ -10,6 +10,16 @@ auto __uncin_tie = std::cin.tie(nullptr);
 
 class Solution {
 public:
+  // clang-format off
+  //
+  // Constraints: -10^5 <= nums[i] <= 10^5
+  //
+  // Note:
+  // 1. std::numeric_limits<int>::max() = INT_MAX =  2'147'483'647
+  // 2. std::numeric_limits<int>::min() = INT_MIN = -2'147'483'648
+  // 3. INT_MIN < (-10^5) * 3 <= nums[i] + nums[j] + nums[k] <= (10^5) * 3 < INT_MAX
+  //
+  // clang-format on
   vector<vector<int>> threeSum(vector<int>& nums) {
     return three_sum_v2(nums);
   }
@@ -55,13 +65,16 @@ private:
 
     // Iterate through the array, fixing the first element
     for (int i = 0; i < n - 2; ++i) {
-      // Optimization: If the smallest number is already positive, we can stop
-      if (nums[i] > 0) {
+      if (int min_sum = nums[i] + nums[i + 1] + nums[i + 2]; min_sum > 0) {
         break;
       }
 
       // Skip duplicate first elements to avoid duplicate triplets
       if (i > 0 && nums[i] == nums[i - 1]) {
+        continue;
+      }
+
+      if (int max_sum = nums[i] + nums[n - 2] + nums[n - 1]; max_sum < 0) {
         continue;
       }
 
