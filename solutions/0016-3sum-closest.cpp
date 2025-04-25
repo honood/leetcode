@@ -9,6 +9,18 @@ auto __uncin_tie = std::cin.tie(nullptr);
 
 class Solution {
 public:
+  // clang-format off
+  //
+  // Constraints:
+  // 1. -1000 <= nums[i] <= 1000
+  // 2. -10^4 <= target <= 10^4
+  //
+  // Note:
+  // 1. std::numeric_limits<int>::max() = INT_MAX =  2'147'483'647
+  // 2. std::numeric_limits<int>::min() = INT_MIN = -2'147'483'648
+  // 3. INT_MIN < (-1000*3 - 10^4) <= nums[i] + nums[j] + nums[k] - target <= (1000*3 + 10^4 ) < INT_MAX
+  //
+  // clang-format on
   int threeSumClosest(vector<int>& nums, int target) {
     return three_sum_closest_v2(nums, target);
   }
@@ -27,14 +39,13 @@ private:
       return target;
     }
 
-    // Use long long for difference to avoid potential overflow
-    long long min_diff = std::numeric_limits<long long>::max();
+    int min_diff = std::numeric_limits<int>::max();
 
     for (int i = 0; i < n - 2; ++i) {
       for (int j = i + 1; j < n - 1; ++j) {
         for (int k = j + 1; k < n; ++k) {
           int sum = nums[i] + nums[j] + nums[k];
-          long long diff = std::abs(static_cast<long long>(sum) - target);
+          int diff = std::abs(sum - target);
           if (diff == 0) {
             return target;
           }
@@ -61,28 +72,23 @@ private:
 
     std::sort(nums.begin(), nums.end());
 
-    // Using long long for min_diff is crucial to prevent overflow issues
-    // when calculating abs(sum - target), especially near INT_MIN/INT_MAX.
-    long long min_diff = std::numeric_limits<long long>::max();
+    int min_diff = std::numeric_limits<int>::max();
     // Initializing closest_sum to 0 is acceptable because min_diff is max,
     // ensuring the first calculated sum will update closest_sum.
     // Initializing with nums[0]+nums[1]+nums[2] is also a valid alternative.
     int closest_sum = 0;
 
     for (int i = 0; i < n - 2; ++i) {
+      if (int min_sum = nums[i] + nums[i + 1] + nums[i + 2]; min_sum > target) {
+        return std::abs(min_sum - target) < min_diff ? min_sum : closest_sum;
+      }
+
       if (i > 0 && nums[i] == nums[i - 1]) {
         continue;
       }
 
-      if (int min_sum = nums[i] + nums[i + 1] + nums[i + 2]; min_sum > target) {
-        return std::abs(static_cast<long long>(min_sum) - target) < min_diff
-                 ? min_sum
-                 : closest_sum;
-      }
-
       if (int max_sum = nums[i] + nums[n - 2] + nums[n - 1]; max_sum < target) {
-        if (long long diff = std::abs(static_cast<long long>(max_sum) - target);
-            diff < min_diff) {
+        if (int diff = std::abs(max_sum - target); diff < min_diff) {
           min_diff = diff;
           closest_sum = max_sum;
         }
@@ -92,13 +98,9 @@ private:
       int left = i + 1;
       int right = n - 1;
       while (left < right) {
-        // Calculate the sum using int, assuming it won't overflow based on
-        // constraints
-        // If intermediate sum could overflow int, use long long here.
         int sum = nums[i] + nums[left] + nums[right];
 
-        if (long long diff = std::abs(static_cast<long long>(sum) - target);
-            diff < min_diff) {
+        if (int diff = std::abs(sum - target); diff < min_diff) {
           min_diff = diff;
           closest_sum = sum;
         }
