@@ -520,7 +520,7 @@
 ### Misc
 
 1. [31\. Next Permutation](https://leetcode.com/problems/next-permutation/?envType=study-plan-v2&envId=top-100-liked) [MEDIUM]
-2. [41\. First Missing Positive](https://leetcode.com/problems/first-missing-positive/?envType=study-plan-v2&envId=top-100-liked) [HARD]
+2. [41\. First Missing Positive](https://leetcode.com/problems/first-missing-positive/?envType=study-plan-v2&envId=top-100-liked) [HARD] ([C++](solutions/0041-first-missing-positive.cpp))
 3. [53\. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/?envType=study-plan-v2&envId=top-100-liked) [MEDIUM] ([C++](solutions/0053-maximum-subarray.cpp))
 4. [56\. Merge Intervals](https://leetcode.com/problems/merge-intervals/?envType=study-plan-v2&envId=top-100-liked) [MEDIUM] ([C++](solutions/0056-merge-intervals.cpp))
 5. [75\. Sort Colors](https://leetcode.com/problems/sort-colors/?envType=study-plan-v2&envId=top-100-liked) [MEDIUM]
